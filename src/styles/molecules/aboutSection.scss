@@ -1,0 +1,22 @@
+@import '../utilities/variables.scss';
+
+// !ABOUT SECTION -----------------------------------------------------------
+// --------------------------------------------------------------------------
+.about-me-section {
+	background-color: $offWhite;
+	padding: $spacingSmall;
+}
+
+.about-me-section__headline {
+	margin-top: 0;
+}
+
+.about-me-section__icon {
+	height: 50px;
+	width: 50px;
+}
+
+.about-me-section__blurb{
+	margin: 0 auto;
+	max-width: 200px;
+}

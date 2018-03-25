@@ -1,0 +1,17 @@
+@import '../utilities/variables.scss';
+
+// !HOME CONTACT ------------------------------------------------------------
+// --------------------------------------------------------------------------
+.home-contact-wrap {
+	align-items: center;
+	background-color: #FED766;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: $spacingLarge 0;
+}
+
+.home-contact__blurb {
+	margin: $spacingLarge auto;
+	max-width: 300px;
+}

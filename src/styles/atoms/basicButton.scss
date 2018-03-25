@@ -7,9 +7,53 @@
 	border-radius: 25px;
 	color: red;
 	display: inline-block;
+	overflow: hidden;
 	padding: 15px;
+	position: relative;
+
+	transition: all 0.25s;
+
+	&:before {
+		background-color: $white;
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+
+		transition: transform 0.25s ease-in-out;
+		transform: translateX(-110%);
+	}
+
+	.no-touchevents &.right {
+
+		&:before {
+			transform: translateX(110%);
+		}
+	}
+
+	.no-touchevents &.center {
+		border: 2px solid $black;
+		color: $black;
+
+		&:before {
+			transform: translateX(0);
+		}
+	}
+
+	.no-touchevents &.left {
+
+		&:before {
+			transition: transform 0s ease-in-out;
+			transform: translateX(-110%);
+		}
+	}
 }
 
 .basic-button__text {
+	position: relative;
 	text-transform: uppercase;
+	z-index: 2;
 }

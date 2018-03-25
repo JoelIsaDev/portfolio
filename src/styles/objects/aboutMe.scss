@@ -1,0 +1,16 @@
+@import '../utilities/variables.scss';
+
+// !ABOUT ME ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.about-me-section-wrap {
+	display: flex;
+	justify-content: space-around;
+}
+
+.about-me-wrap {
+	display: flex;
+	flex-direction: column;
+	padding: $spacingLarge 0;
+	justify-content: center;
+	text-align: center;
+}
