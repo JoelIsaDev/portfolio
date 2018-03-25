@@ -1,0 +1,15 @@
+@import '../utilities/variables.scss';
+
+// !BUTTON ------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.basic-button {
+	border: 2px solid red;
+	border-radius: 25px;
+	color: red;
+	display: inline-block;
+	padding: 15px;
+}
+
+.basic-button__text {
+	text-transform: uppercase;
+}

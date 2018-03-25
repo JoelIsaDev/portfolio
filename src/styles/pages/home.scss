@@ -1,0 +1,22 @@
+@import '../utilities/variables.scss';
+
+// !HOME --------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.home-panel--full {
+	align-items: center;
+	background-color: $gray;
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	justify-content: center;
+	text-align: center;
+}
+
+.home-panel__headline {
+	padding: 15% 0;
+}
+
+.logo {
+	height: 50px;
+	width: 50px;
+}
