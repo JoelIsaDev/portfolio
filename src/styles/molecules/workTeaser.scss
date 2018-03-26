@@ -1,0 +1,30 @@
+@import '../utilities/variables.scss';
+
+// !IMAGES ------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser__hero-main {
+	display: block;
+	max-width: 400px;
+	width: 90%;
+
+	@media(min-width: $breakSmall) {
+		max-width: inherit;
+		width: 100%;
+	}
+}
+
+
+// !WRAPPERS ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser {
+	max-width: $maxWidth;
+	padding: $spacingLarge;
+
+	@media(min-width: $breakSmall) {
+		width: calc(50% - 15px);
+	}
+}
+
+.work-teaser__blurb {
+	padding: $spacingSmall 0;
+}

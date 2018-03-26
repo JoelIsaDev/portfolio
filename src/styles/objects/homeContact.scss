@@ -4,7 +4,7 @@
 // --------------------------------------------------------------------------
 .home-contact-wrap {
 	align-items: center;
-	background-color: #FED766;
+	background-color: $brown;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -12,10 +12,12 @@
 }
 
 .home-contact-headline {
+	color: $white;
 	margin: 0;
 }
 
 .home-contact__blurb {
+	color: $white;
 	margin: $spacingLarge auto;
 	max-width: 300px;
 }

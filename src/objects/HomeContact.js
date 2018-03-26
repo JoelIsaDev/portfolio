@@ -9,15 +9,15 @@ class HomeContact extends PureComponent {
 		return(
 			<section className="home-contact-wrap">
 				<h1 className="home-contact-headline">
-					Let's Work Together
+					Let's Do Work
 				</h1>
 				<p className="home-contact__blurb">
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
-					Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+					I am currently available for full time or freelance work, 
+					so let's do something great.
 				</p>
 
 				<BasicButton
-					text="I am available for hire"
+					text="Contact Me"
 					route="contact"
 					handleClick={this.props.handleClick}
 				/>

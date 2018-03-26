@@ -1,0 +1,26 @@
+@import '../utilities/variables.scss';
+
+// !SECTION -----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser__headline {
+	text-align: center;
+}
+
+// !WRAPPERS ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser-wrap {
+	background-color: $offWhite;
+	padding: $spacingLarge 0;
+}
+
+.work-teaser-wrap__containter {
+	margin: 0 auto;
+	max-width: $maxWidth;
+
+	@media(min-width: $breakSmall) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+}

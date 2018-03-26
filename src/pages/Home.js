@@ -4,6 +4,7 @@ import {Helmet} from "react-helmet";
 /* Objects */
 import Footer from '../objects/Footer';
 import AboutMe from '../objects/AboutMe';
+import WorkTeaserSection from '../objects/WorkTeaserSection';
 import HomeContact from '../objects/HomeContact';
 
 /* Atoms */
@@ -19,6 +20,10 @@ class Home extends PureComponent {
 		this.handleButtonClick = this.handleButtonClick.bind(this);
 		this.findParent = this.findParent.bind(this);
 		this.scrollIt = this.scrollIt.bind(this);
+	}
+
+	componentDidMount() {
+		window.scrollTo(0,0);
 	}
 
 	/*
@@ -89,6 +94,9 @@ class Home extends PureComponent {
 					<span className="chevron--down push" onClick={this.scrollIt}></span>
 				</section>
 				<AboutMe />
+				<WorkTeaserSection
+					history={this.props.history}
+				/>
 				<HomeContact
 					handleClick={this.handleButtonClick}
 				/>

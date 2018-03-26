@@ -31,6 +31,10 @@ class Contact extends PureComponent {
 		this.handleSubmit = this.handleSubmit.bind(this);
 	}
 
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	/*
  		assigns form field values as they are filled out 
  	*/
