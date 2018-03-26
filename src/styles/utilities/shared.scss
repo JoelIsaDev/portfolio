@@ -24,6 +24,16 @@ ul {
 	padding: 0;
 }
 
+textarea {
+	resize: none;
+}
+
+//remove default red shadow in Firefox
+input:required, textarea:required {
+	box-shadow:none;
+}
+
+
 // !WRAPS -------------------------------------------------------------------
 // --------------------------------------------------------------------------
 .limit-wrap {
@@ -33,8 +43,8 @@ ul {
 // !CHEVRON -----------------------------------------------------------------
 // --------------------------------------------------------------------------
 .chevron--down {
-	border-right: 1px solid #000;
-	border-top: 1px solid #000;
+	border-right: 1px solid $black;
+	border-top: 1px solid $black;
 	cursor: pointer;
 	display: block;
 	height: 10px;
@@ -50,8 +60,8 @@ ul {
 }
 
 .chevron--up {
-	border-right: 1px solid #000;
-	border-top: 1px solid #000;
+	border-right: 1px solid $white;
+	border-top: 1px solid $white;
 	cursor: pointer;
 	display: block;
 	height: 10px;

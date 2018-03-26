@@ -14,7 +14,7 @@ class Footer extends PureComponent {
 		window.scrollTo({
 			'behavior': 'smooth',
 			'left': 0,
-			'top': document.getElementById('jsLanding').offsetTop
+			'top': document.getElementById(this.props.scrollElement).offsetTop
 		});
 	}
 

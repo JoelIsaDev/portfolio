@@ -3,11 +3,13 @@
 // !FOOTER ------------------------------------------------------------------
 // --------------------------------------------------------------------------
 .footer {
+	background-color: #29313A;
 	padding: $spacingLarge 0;
 	text-align: center;
 }
 
 .legal {
+	color: $white;
 	display: block;
 	margin-bottom: $spacingLarge;
 }
@@ -24,6 +26,7 @@
 
 .social-media-icon {
 	height: 25px;
+	fill: $white;
 	width: 25px;
 
 	opacity: 1;
