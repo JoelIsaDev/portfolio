@@ -1,0 +1,41 @@
+@import '../utilities/variables.scss';
+
+// !ABOUT SECTION -----------------------------------------------------------
+// --------------------------------------------------------------------------
+.about-me-section {
+	background-color: $offWhite;
+	margin: 0 auto;
+	padding: $spacingLarge;
+	max-width: 300px;
+
+	@media(min-width: $breakSmall) {
+		max-width: inherit;
+		padding: $spacingLarge;
+		width: calc(33.3333% - 15px);
+	}
+
+
+	+.about-me-section {
+		margin-top: $spacingSmall;
+
+		@media(min-width: $breakSmall) {
+			margin-top: 0;
+		}
+	}
+
+}
+
+.about-me-section__headline {
+	margin: 0;
+}
+
+.about-me-section__icon {
+	height: $iconLarge;
+	margin: $spacingSmall 0;
+	width: $iconLarge;
+}
+
+.about-me-section__blurb{
+	margin: 0 auto;
+	max-width: 200px;
+}

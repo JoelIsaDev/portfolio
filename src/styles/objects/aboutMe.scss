@@ -1,0 +1,29 @@
+@import '../utilities/variables.scss';
+
+// !ABOUT ME ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.about-me-section-wrap {
+	max-width: $maxWidth;
+
+	@media(min-width: $breakSmall) {
+		align-self: center;
+		display: flex;
+		justify-content: space-around;
+	}
+}
+
+.about-me-wrap {
+	display: flex;
+	flex-direction: column;
+	padding: $spacingLarge 0;
+	justify-content: center;
+	text-align: center;
+}
+
+.about-me-headline {
+	margin: 0;
+}
+
+.about-me-secondary-headline {
+	margin: 10px 0 $spacingLarge;
+}

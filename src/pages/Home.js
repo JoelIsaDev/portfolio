@@ -1,6 +1,11 @@
 import React, { PureComponent } from 'react';
 import {Helmet} from "react-helmet";
 
+/* Objects */
+import Footer from '../objects/Footer';
+import AboutMe from '../objects/AboutMe';
+import HomeContact from '../objects/HomeContact';
+
 /* Atoms */
 import BasicButton from '../atoms/BasicButton';
 
@@ -13,6 +18,7 @@ class Home extends PureComponent {
 
 		this.handleButtonClick = this.handleButtonClick.bind(this);
 		this.findParent = this.findParent.bind(this);
+		this.scrollIt = this.scrollIt.bind(this);
 	}
 
 	/*
@@ -45,29 +51,50 @@ class Home extends PureComponent {
 		return el;
 	}
 
+	/*
+		Scrolls the user to the first element on the page beyond the landing
+	*/
+	scrollIt() {
+		window.scrollTo({
+			'behavior': 'smooth',
+			'left': 0,
+			'top': document.getElementById('jsAboutMe').offsetTop
+		});
+	}
+
 	render() {
 		return(
-			<section className="home-panel--full">
-				<Helmet
-					title="Joel Hansen | LOREM IPSUM"
-					meta={[
-						{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
-					]}
-				/>
+			<div>
+				<section className="home-panel--full" id="jsLanding">
+					<Helmet
+						title="Joel Hansen | LOREM IPSUM"
+						meta={[
+							{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
+						]}
+					/>
 
-				<img src={Logo} alt="" className="logo" />
+					<a href="/">
+						<img src={Logo} alt="" className="logo" />
+					</a>
 
-				<h1 className="home-panel__headline">
-					Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-				</h1>
+					<h1 className="home-panel__headline">
+						Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
+					</h1>
 
-				<BasicButton
-					text="I am available for hire"
-					route="contact"
+					<BasicButton
+						text="I am available for hire"
+						route="contact"
+						handleClick={this.handleButtonClick}
+					/>
+					<span className="chevron--down push" onClick={this.scrollIt}></span>
+				</section>
+				<AboutMe />
+				<HomeContact
 					handleClick={this.handleButtonClick}
 				/>
 
-			</section>
+				<Footer />
+			</div>
 		);
 	}
 }
