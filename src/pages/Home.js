@@ -93,7 +93,9 @@ class Home extends PureComponent {
 					handleClick={this.handleButtonClick}
 				/>
 
-				<Footer />
+				<Footer
+					scrollElement='jsLanding'
+				/>
 			</div>
 		);
 	}
