@@ -4,16 +4,35 @@
 // --------------------------------------------------------------------------
 .about-me-section {
 	background-color: $offWhite;
-	padding: $spacingSmall;
+	margin: 0 auto;
+	padding: $spacingLarge;
+	max-width: 300px;
+
+	@media(min-width: $breakSmall) {
+		max-width: inherit;
+		padding: $spacingLarge;
+		width: calc(33.3333% - 15px);
+	}
+
+
+	+.about-me-section {
+		margin-top: $spacingSmall;
+
+		@media(min-width: $breakSmall) {
+			margin-top: 0;
+		}
+	}
+
 }
 
 .about-me-section__headline {
-	margin-top: 0;
+	margin: 0;
 }
 
 .about-me-section__icon {
-	height: 50px;
-	width: 50px;
+	height: $iconLarge;
+	margin: $spacingSmall 0;
+	width: $iconLarge;
 }
 
 .about-me-section__blurb{

@@ -3,8 +3,13 @@
 // !ABOUT ME ----------------------------------------------------------------
 // --------------------------------------------------------------------------
 .about-me-section-wrap {
-	display: flex;
-	justify-content: space-around;
+	max-width: $maxWidth;
+
+	@media(min-width: $breakSmall) {
+		align-self: center;
+		display: flex;
+		justify-content: space-around;
+	}
 }
 
 .about-me-wrap {
@@ -13,4 +18,12 @@
 	padding: $spacingLarge 0;
 	justify-content: center;
 	text-align: center;
+}
+
+.about-me-headline {
+	margin: 0;
+}
+
+.about-me-secondary-headline {
+	margin: 10px 0 $spacingLarge;
 }

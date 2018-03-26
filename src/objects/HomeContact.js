@@ -8,7 +8,7 @@ class HomeContact extends PureComponent {
 	render(){
 		return(
 			<section className="home-contact-wrap">
-				<h1>
+				<h1 className="home-contact-headline">
 					Let's Work Together
 				</h1>
 				<p className="home-contact__blurb">
