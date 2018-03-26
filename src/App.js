@@ -3,6 +3,10 @@ import { Switch, Route } from 'react-router-dom';
 
 //** Pages **//
 import Home from './pages/Home';
+import Made from './pages/Made';
+import Dominos from './pages/Dominos';
+import GSV from './pages/GSV';
+import Evol from './pages/Evol';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 
@@ -25,6 +29,31 @@ class App extends Component {
 						<Contact {...props}
 						/>}
 					/>
+
+					<Route exact path='/made'
+					render={(props) =>
+						<Made {...props}
+						/>}
+					/>
+
+					<Route exact path='/dominos'
+					render={(props) =>
+						<Dominos {...props}
+						/>}
+					/>
+
+					<Route exact path='/gsv'
+					render={(props) =>
+						<GSV {...props}
+						/>}
+					/>
+
+					<Route exact path='/evol'
+					render={(props) =>
+						<Evol {...props}
+						/>}
+					/>
+
 					
 					<Route path='*'
 					render={(props) =>
