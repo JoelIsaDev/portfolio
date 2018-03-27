@@ -3,7 +3,14 @@
 // !SECTION -----------------------------------------------------------------
 // --------------------------------------------------------------------------
 .work-teaser__headline {
+	font-family: 'Fjalla One', sans-serif;
 	text-align: center;
+}
+
+.work-teaser__secondary-headline {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	margin: $spacingSmall 0 0;
 }
 
 // !WRAPPERS ----------------------------------------------------------------

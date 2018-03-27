@@ -62,7 +62,7 @@ class Footer extends PureComponent {
 					</li>
 
 				</ul>
-				<span className="legal">Built by me &#169; {year}</span>
+				<span className="legal">Built by me. &#169; {year}</span>
 				<span className="chevron--up" onClick={this.scrollToTop}></span>
 			</footer>
 		);

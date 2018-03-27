@@ -4,12 +4,15 @@
 // --------------------------------------------------------------------------
 .work-page__headline {
 	color: $white;
+	font-family: 'Fjalla One', sans-serif;
 	margin-bottom: $spacingLarge;
 	text-align: center;
 }
 
 .work-page__sub-headline-small {
 	color: $red;
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
 	margin: 0 0 $spacingSmall;
 }
 
@@ -38,6 +41,8 @@
 
 .work-page__sub-headline {
 	color: $red;
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
 	margin-top: $spacingLarge;
 }
 

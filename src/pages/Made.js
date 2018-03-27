@@ -27,7 +27,7 @@ class Made extends PureComponent {
 				/>
 				<section className="work-page">
 					<h1 className="work-page__headline">
-						Made Movement <span className="no-wrap">Website Redesign</span>
+						Made's <span className="no-wrap">Website Redesign</span>
 					</h1>
 					<div className="work-page__inner-wrap">
 						<div className="work-page-wrap--large">
