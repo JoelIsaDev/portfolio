@@ -8,10 +8,10 @@ class AboutMe extends PureComponent {
 		return(
 			<section className="about-me-wrap" id="jsAboutMe">
 				<h1 className="about-me-headline">
-					My Strengths
+					About me
 				</h1>
 				<h2 className="about-me-secondary-headline">
-					lorem ipsum lorem ipsum
+					Here are just a few of my strengths:
 				</h2>
 				
 				<div className="about-me-section-wrap">

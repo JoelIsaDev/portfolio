@@ -18,7 +18,7 @@
 	text-align: center;
 
 	&:before {
-		background-color: $white;
+		background-color: $black;
 		content: '';
 		height: 100vh;
 		opacity: 0.2;
@@ -30,10 +30,12 @@
 
 .home-panel__content {
 	bottom: $spacingSmall;
+	padding: 0 $spacingLarge;
 	position: absolute;
 }
 
 .home-panel__headline {
 	color: $white;
+	font-family: 'Fjalla One', sans-serif;
 	margin-bottom: $spacingSmall;
 }

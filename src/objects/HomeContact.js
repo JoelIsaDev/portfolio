@@ -12,8 +12,8 @@ class HomeContact extends PureComponent {
 					Let's Do Work
 				</h1>
 				<p className="home-contact__blurb">
-					I am currently available for full time or freelance work, 
-					so let's do <span className="no-wrap">something great.</span>
+					I am currently available for full time or freelance work. 
+					Let's do <span className="no-wrap">something great.</span>
 				</p>
 
 				<BasicButton
