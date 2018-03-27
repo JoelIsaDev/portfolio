@@ -101,6 +101,29 @@ input:required, textarea:required {
 	}
 }
 
+.chevron--right {
+	border-right: 1px solid $red;
+	border-top: 1px solid $red;
+	cursor: pointer;
+	display: inline-block;
+	height: 10px;
+	margin: 0 auto;
+	padding: 3px;
+	position: relative;
+	width: 10px;
+	z-index: 2;
+
+	transform: rotate(40deg);
+
+	&.inactive {
+		display: none;
+	}
+
+	&.push {
+		margin-left: $spacingLarge;
+	}
+}
+
 // !KEYFRAMES ---------------------------------------------------------------
 // --------------------------------------------------------------------------
 @keyframes bounceDown {
