@@ -42,17 +42,33 @@ class BasicButton extends Component {
 
 
 	render() {
-		return(
-			<a 
-				className={this.state.backgroundPosition+ ' basic-button'}
-				href={this.props.route} 
-				onClick={this.props.handleClick}
-				onMouseEnter={this.setBackgroundCenter}
-				onMouseLeave={this.setBackgroundRight}
-			>
-				<span className="basic-button__text">{this.props.text}</span>
-			</a>
-		);
+		if(this.props.linkOut) {
+			return(
+				<a 
+					className={this.state.backgroundPosition+ ' basic-button'}
+					href={this.props.route} 
+					onMouseEnter={this.setBackgroundCenter}
+					onMouseLeave={this.setBackgroundRight}
+					target="_blank" rel="noopener noreferrer"
+				>
+					<span className="basic-button__text">{this.props.text}</span>
+					<span className="chevron--right push"></span>
+				</a>
+			);
+		}
+		else {
+			return(
+				<a 
+					className={this.state.backgroundPosition+ ' basic-button'}
+					href={this.props.route} 
+					onClick={this.props.handleClick}
+					onMouseEnter={this.setBackgroundCenter}
+					onMouseLeave={this.setBackgroundRight}
+				>
+					<span className="basic-button__text">{this.props.text}</span>
+				</a>
+			);
+		}
 	}
 }
 

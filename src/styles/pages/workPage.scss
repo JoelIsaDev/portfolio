@@ -1,0 +1,85 @@
+@import '../utilities/variables.scss';
+
+// !SECTION -----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-page__headline {
+	color: $white;
+	margin-bottom: $spacingLarge;
+	text-align: center;
+}
+
+.work-page__sub-headline-small {
+	color: $red;
+	margin: 0 0 $spacingSmall;
+}
+
+.role {
+	display: block;
+
+	+.role {
+		margin-top: 10px;
+	}
+}
+
+.work-page__hero {
+	display: block;
+	width: 100%;
+}
+
+.role__blurb {
+	margin: $spacingLarge 0;
+	width: 250px;
+}
+
+.work-page__blurb {
+	max-width: 400px;
+	width: 100%;
+}
+
+.work-page__sub-headline {
+	color: $red;
+	margin-top: $spacingLarge;
+}
+
+// !WRAPPERS ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-page {
+	background-color: $darkBlue;
+	padding: $spacingLarge 0;
+}
+
+.work-page-wrap--large { 
+	background-color: $offWhite;
+	margin: 0 auto;
+	padding: $spacingLarge;
+	width: 80%;
+
+	@media(min-width: 1000px) {
+		margin: 0;
+		width: inherit;
+	}
+}
+
+.work-page-wrap--small {
+	background-color: $offWhite;
+	margin: $spacingLarge auto 0;
+	max-width: 400px;
+	padding: $spacingLarge;
+	width: 80%;
+
+	@media(min-width: 1000px) {
+		align-self: flex-start;
+		margin: 0;
+		max-width: inherit;
+		width: inherit;
+	}
+}
+
+.work-page__inner-wrap {
+	@media(min-width: 1000px) {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 auto;
+		max-width: $maxWidth;
+	}
+}
