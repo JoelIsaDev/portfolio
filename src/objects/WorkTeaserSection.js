@@ -12,7 +12,7 @@ class WorkTeaserSection extends PureComponent {
 		return(
 			<section className="work-teaser-wrap">
 				<h1 className="work-teaser__headline">
-					Selected Work:
+					Selected Work
 				</h1>
 				<div className="work-teaser-wrap__containter">
 					<WorkTeaser

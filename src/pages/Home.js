@@ -81,17 +81,17 @@ class Home extends PureComponent {
 							{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
 						]}
 					/>
-
-					<h1 className="home-panel__headline">
-						Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum
-					</h1>
-
-					<BasicButton
-						text="I am available for hire"
-						route="contact"
-						handleClick={this.handleButtonClick}
-					/>
-					<span className="chevron--down push" onClick={this.scrollIt}></span>
+					<div className="home-panel__content">
+						<h1 className="home-panel__headline">
+							Lorem ipsum Lorem ipsum Lorem ipsum <span className="no-wrap">Lorem ipsum</span>
+						</h1>
+						<BasicButton
+							text="I am available for hire"
+							route="contact"
+							handleClick={this.handleButtonClick}
+						/>
+						<span className="chevron--down push" onClick={this.scrollIt}></span>
+					</div>
 				</section>
 				<AboutMe />
 				<WorkTeaserSection
