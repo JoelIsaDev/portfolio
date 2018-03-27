@@ -3,9 +3,9 @@
 // !BUTTON ------------------------------------------------------------------
 // --------------------------------------------------------------------------
 .basic-button {
-	border: 2px solid red;
+	border: 2px solid $red;
 	border-radius: 25px;
-	color: red;
+	color: $red;
 	display: inline-block;
 	overflow: hidden;
 	padding: 15px;

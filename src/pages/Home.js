@@ -7,12 +7,10 @@ import AboutMe from '../objects/AboutMe';
 import WorkTeaserSection from '../objects/WorkTeaserSection';
 import MoreWork from '../objects/MoreWork';
 import HomeContact from '../objects/HomeContact';
+import NavLayout from '../objects/NavLayout';
 
 /* Atoms */
 import BasicButton from '../atoms/BasicButton';
-
-/* Images */
-import Logo from '../imgs/logo.svg';
 
 class Home extends PureComponent {
 	constructor(props) {
@@ -37,6 +35,8 @@ class Home extends PureComponent {
 			route = target.getAttribute('href');
 
 		e.preventDefault();
+
+		document.body.className = document.body.className.replace('is-locked','');
 
 		if(route === null) {
 			theElement = this.findParent(e.target, 'basic-button');
@@ -70,7 +70,10 @@ class Home extends PureComponent {
 
 	render() {
 		return(
-			<div>
+			<div className="home-wrap">
+				<NavLayout
+					history={this.props.history}
+				/>
 				<section className="home-panel--full" id="jsLanding">
 					<Helmet
 						title="Joel Hansen | LOREM IPSUM"
@@ -78,10 +81,6 @@ class Home extends PureComponent {
 							{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
 						]}
 					/>
-
-					<a href="/">
-						<img src={Logo} alt="" className="logo" />
-					</a>
 
 					<h1 className="home-panel__headline">
 						Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum

@@ -2,6 +2,10 @@
 
 // !HOME --------------------------------------------------------------------
 // --------------------------------------------------------------------------
+.home-wrap {
+	position: relative;
+}
+
 .home-panel--full {
 	align-items: center;
 	background: url('../../../imgs/fpo/fpo-bkg.jpg') no-repeat top center;
@@ -27,9 +31,4 @@
 .home-panel__headline {
 	color: $white;
 	padding: 15% 0;
-}
-
-.logo {
-	height: $iconLarge;
-	width: $iconLarge;
 }
