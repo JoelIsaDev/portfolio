@@ -57,6 +57,14 @@ input:required, textarea:required {
 	.no-touchevents &:hover {
 		animation: bounceDown 1.5s infinite ease-in-out;
 	}
+
+	&.inactive {
+		display: none;
+	}
+
+	&.push {
+		margin-top: $spacingSmall;
+	}
 }
 
 .chevron--up {
@@ -73,6 +81,14 @@ input:required, textarea:required {
 
 	.no-touchevents &:hover {
 		animation: bounceUp 1.5s infinite ease-in-out;
+	}
+
+	&.inactive {
+		display: none;
+	}
+
+	&.push {
+		margin-top: $spacingLarge;
 	}
 }
 

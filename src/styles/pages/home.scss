@@ -4,12 +4,24 @@
 // --------------------------------------------------------------------------
 .home-panel--full {
 	align-items: center;
-	background-color: $gray;
+	background: url('../../../imgs/fpo/fpo-bkg.jpg') no-repeat top center;
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	height: 100vh;
 	justify-content: center;
+	position: relative;
 	text-align: center;
+
+	&:before {
+		background-color: $white;
+		content: '';
+		height: 100vh;
+		opacity: 0.2;
+		position: absolute;
+		width: 100%;
+
+	}
 }
 
 .home-panel__headline {

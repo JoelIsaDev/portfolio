@@ -1,0 +1,33 @@
+@import '../utilities/variables.scss';
+
+// !SECTION -----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.more-work__hero {
+	border: 3px solid $offWhite;
+	max-width: 350px;
+	width: 100%;
+
+	@media(min-width: $breakSmall) {
+		max-width: inherit;
+	}
+}
+
+// !WRAPPERS ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.more-work__example {
+	text-align: center;
+
+	@media(min-width: $breakSmall) {
+		margin: 15px 0;
+		text-align: left;
+		width: calc(50% - 15px);
+	}
+
+	+.more-work__example {
+		margin-top: $spacingLarge;
+
+		@media(min-width: $breakSmall) {
+			margin-top: 15px;
+		}
+	}
+}
