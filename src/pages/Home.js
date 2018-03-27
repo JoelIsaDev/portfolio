@@ -5,6 +5,7 @@ import {Helmet} from "react-helmet";
 import Footer from '../objects/Footer';
 import AboutMe from '../objects/AboutMe';
 import WorkTeaserSection from '../objects/WorkTeaserSection';
+import MoreWork from '../objects/MoreWork';
 import HomeContact from '../objects/HomeContact';
 
 /* Atoms */
@@ -97,6 +98,7 @@ class Home extends PureComponent {
 				<WorkTeaserSection
 					history={this.props.history}
 				/>
+				<MoreWork />
 				<HomeContact
 					handleClick={this.handleButtonClick}
 				/>

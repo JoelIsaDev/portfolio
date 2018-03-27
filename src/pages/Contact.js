@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import {Helmet} from "react-helmet";
 import Axios from 'axios';
 import querystring from 'querystring';
 
@@ -198,6 +199,13 @@ class Contact extends PureComponent {
 		return(
 			<div>
 				<section className="contact-wrapper" id="jsContactWrapper">
+					<Helmet
+						title="Joel Hansen | Contact"
+						meta={[
+							{name: 'description', content: 'Joel Hansen, Contact'}
+						]}
+					/>
+
 					<h1 className="contact-headline">
 						Lorem Ipsum
 					</h1>
