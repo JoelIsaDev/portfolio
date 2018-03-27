@@ -5,6 +5,7 @@ import querystring from 'querystring';
 
 /* Objects */
 import Footer from '../objects/Footer';
+import NavLayout from '../objects/NavLayout';
 
 class Contact extends PureComponent {
 	constructor(props) {
@@ -205,7 +206,9 @@ class Contact extends PureComponent {
 							{name: 'description', content: 'Joel Hansen, Contact'}
 						]}
 					/>
-
+					<NavLayout
+						history={this.props.history}
+					/>
 					<h1 className="contact-headline">
 						Lorem Ipsum
 					</h1>

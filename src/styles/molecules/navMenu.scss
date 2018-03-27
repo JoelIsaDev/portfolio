@@ -1,0 +1,46 @@
+@import '../utilities/variables.scss';
+
+// !NAV MENU ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.nav-menu {
+	align-items: center;
+	background: $blue;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	position: fixed;
+	top: 0;
+	width: 100%;
+
+	transform: translateY(-100%);
+	transition: transform 0.25s ease-in-out;
+
+	@media(min-width: $breakSmall) {
+		align-items: center;
+	}
+
+
+
+	&.is-active {
+		transform: translateY(0);
+	}
+
+	.basic-button {
+		margin: 15px 0 0;
+		text-align: center;
+		width: 150px;
+
+		@media(min-width: $breakSmall) {
+			margin: 0 15px 0 0;
+		}
+	}
+}
+
+.nav-menu-container {
+	display: flex;
+	flex-direction: column;
+
+	@media(min-width: $breakSmall) {
+		flex-direction: row;
+	}
+}

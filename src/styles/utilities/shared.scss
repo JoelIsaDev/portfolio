@@ -13,6 +13,15 @@ html {
 	box-sizing: inherit;
 }
 
+html,
+body {
+
+	-webkit-font-smoothing: antialiased;
+
+	&.is-locked {
+		overflow: hidden !important;
+	}
+}
 
 a {
 	text-decoration: none;

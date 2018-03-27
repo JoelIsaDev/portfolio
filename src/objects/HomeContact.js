@@ -13,7 +13,7 @@ class HomeContact extends PureComponent {
 				</h1>
 				<p className="home-contact__blurb">
 					I am currently available for full time or freelance work, 
-					so let's do something great.
+					so let's do <span className="no-wrap">something great.</span>
 				</p>
 
 				<BasicButton

@@ -1,12 +1,16 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 
 /* Atoms */
 import BasicButton from '../atoms/BasicButton';
 
-class WorkTeaser extends PureComponent {
 
-	constructor(props) {
-		super(props);
+class NavMenu extends Component {
+	constructor() {
+		super();
+
+		this.state = {
+			showNav: false
+		}
 
 		this.handleButtonClick = this.handleButtonClick.bind(this);
 		this.findParent = this.findParent.bind(this);
@@ -22,6 +26,8 @@ class WorkTeaser extends PureComponent {
 			route = target.getAttribute('href');
 
 		e.preventDefault();
+
+		document.body.className = document.body.className.replace('is-locked','');
 
 		if(route === null) {
 			theElement = this.findParent(e.target, 'basic-button');
@@ -42,26 +48,40 @@ class WorkTeaser extends PureComponent {
 		return el;
 	}
 
-	render(){
+	render() {
 		return(
-			<div className="work-teaser">
-				<img src={this.props.imageSrc} alt="" className="work-teaser__hero-main" />
-				<div className="work-teaser__inner-wrap">
-					<h2 className="work-teaser__secondary-headline">
-						{this.props.clientName}
-					</h2>
-					<p className="work-teaser__blurb">
-						{this.props.tech}
-					</p>
+			<div className={this.props.showNav ? 'nav-menu is-active' : 'nav-menu'}>
+				<div className="nav-menu-container">
 					<BasicButton
-						text="See More"
-						route={this.props.route}
+						text="Made"
+						route="made"
+						handleClick={this.handleButtonClick}
+					/>
+					<BasicButton
+						text="GSV"
+						route="gsv"
+						handleClick={this.handleButtonClick}
+					/>
+					<BasicButton
+						text="Evol"
+						route="evol"
+						handleClick={this.handleButtonClick}
+					/>
+					<BasicButton
+						text="Dominos"
+						route="dominos"
+						handleClick={this.handleButtonClick}
+					/>
+					<BasicButton
+						text="Contact"
+						route="contact"
 						handleClick={this.handleButtonClick}
 					/>
 				</div>
 			</div>
+
 		);
 	}
 }
 
-export default WorkTeaser;
+export default NavMenu;

@@ -4,7 +4,8 @@
 // --------------------------------------------------------------------------
 .home-contact-wrap {
 	align-items: center;
-	background-color: $darkBlue;
+	background-color: $blue;
+	border-bottom: 2px solid $darkBlue;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -20,4 +21,5 @@
 	color: $white;
 	margin: $spacingLarge auto;
 	max-width: 300px;
+	text-align: center;
 }

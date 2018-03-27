@@ -1,0 +1,18 @@
+@import '../utilities/variables.scss';
+
+// !NAV LAYOUT --------------------------------------------------------------
+// --------------------------------------------------------------------------
+
+.header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 5;
+}
+
+.logo {
+	height: $iconLarge;
+	position: relative;
+	width: $iconLarge;
+	z-index: 3;
+}
