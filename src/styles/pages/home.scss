@@ -28,7 +28,12 @@
 	}
 }
 
+.home-panel__content {
+	bottom: $spacingSmall;
+	position: absolute;
+}
+
 .home-panel__headline {
 	color: $white;
-	padding: 15% 0;
+	margin-bottom: $spacingSmall;
 }

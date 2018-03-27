@@ -84,7 +84,7 @@ class NavLayout extends PureComponent {
 		return(
 			<div className="header">
 					<a href="/" onClick={this.handleNavClick} className="logo-wrap">
-						<img src={Logo} alt="" className="logo" />
+						<img src={Logo} alt="Joel Hansen" className="logo" />
 					</a>
 
 					<Nav
