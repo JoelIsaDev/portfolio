@@ -13,7 +13,7 @@
 	width: 100%;
 
 	transform: translateY(-100%);
-	transition: transform 0.25s ease-in-out;
+	transition: transform 0.50s ease-in-out;
 
 	@media(min-width: $breakSmall) {
 		align-items: center;

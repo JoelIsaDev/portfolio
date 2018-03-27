@@ -50,6 +50,13 @@
 			transform: translateX(-110%);
 		}
 	}
+
+	.no-touchevents &:hover {
+		.chevron--right {
+			border-right: 1px solid $black;
+			border-top: 1px solid $black;
+		}
+	}
 }
 
 .basic-button__text {
