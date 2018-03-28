@@ -13,15 +13,34 @@
 	}
 }
 
+.work-teaser__hero-mobile {
+	bottom: -15px;
+	position: absolute;
+	right: 0;
+	width: 25%;
+}
+
 
 // !WRAPPERS ----------------------------------------------------------------
 // --------------------------------------------------------------------------
 .work-teaser {
 	max-width: $maxWidth;
 	padding: $spacingLarge;
+	text-align: center;
 
-	@media(min-width: $breakSmall) {
+	@media(min-width: 900px) {
+		text-align: left;
 		width: calc(50% - 15px);
+	}
+}
+
+.work-teaser__hero-wrap {
+	margin: 0 auto;
+	max-width: 400px;
+	position: relative;
+
+	@media(min-width: 900px) {
+		margin: 0;
 	}
 }
 

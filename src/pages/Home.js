@@ -83,7 +83,7 @@ class Home extends PureComponent {
 					/>
 					<div className="home-panel__content">
 						<h1 className="home-panel__headline">
-							My name is Joel, I make things on the internet. I'm the guy on  <span className="no-wrap">the right.</span>
+							My name is Joel, I make things on the internet. I'm the guy in the <span className="no-wrap">black jacket.</span>
 						</h1>
 						<BasicButton
 							text="I am available for hire"

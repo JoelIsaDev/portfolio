@@ -9,7 +9,8 @@ import NavLayout from '../objects/NavLayout';
 import BasicButton from '../atoms/BasicButton';
 
 /* Images */
-import FPO from '../imgs/fpo/fpo-computer.png';
+import EvolSrc from '../imgs/examples/img-joel-hansen_evol.png';
+import EvolSrcMobile from '../imgs/examples/img-joel-hansen_evol-mobile.png';
 
 class Evol extends PureComponent {
 	render() {
@@ -30,7 +31,10 @@ class Evol extends PureComponent {
 					</h1>
 					<div className="work-page__inner-wrap">
 						<div className="work-page-wrap--large">
-							<img src={FPO} alt="" className="work-page__hero" />
+							<div className="work-page__hero-wrap">
+								<img src={EvolSrc} alt="" className="work-page__hero" />
+								<img src={EvolSrcMobile} alt="" className="work-page__hero-mobile" />
+							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
 								lorem ipsum lorem ipsum lorem ipsum
