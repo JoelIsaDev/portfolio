@@ -17,7 +17,8 @@
 }
 
 .role {
-	display: block;
+	display: list-item;
+	list-style-type: disc;
 
 	+.role {
 		margin-top: 10px;

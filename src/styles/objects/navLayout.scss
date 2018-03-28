@@ -2,8 +2,8 @@
 
 // !NAV LAYOUT --------------------------------------------------------------
 // --------------------------------------------------------------------------
-
 .header {
+	pointer-events: none;
 	position: fixed;
 	top:$spacingSmall;
 	width: 100%;
@@ -12,6 +12,7 @@
 
 .logo {
 	height: $iconLarge;
+	pointer-events: all;
 	position: relative;
 	width: $iconLarge;
 	z-index: 3;

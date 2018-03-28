@@ -5,6 +5,7 @@
 .nav-wrap {
 	cursor: pointer;
 	height: 45px;
+	pointer-events: all;
 	position: absolute;
 	right: $spacingSmall;
 	top: $spacingSmall;
