@@ -13,6 +13,11 @@ import GSVSrc from '../imgs/examples/img-joel-hansen_gsv.png';
 import GSVSrcMobile from '../imgs/examples/img-joel-hansen_gsv-mobile.png';
 
 class GSV extends PureComponent {
+	
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	render() {
 		return(
 			<div id="workPage">

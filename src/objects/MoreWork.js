@@ -4,12 +4,12 @@ import React, { PureComponent } from 'react';
 import MoreWorkExample from '../molecules/MoreWorkExample';
 
 /* Images */
-import Saturday from '../imgs/moreWork/img-joel-hansen_amex-small-business-saturday.jpg';
-import Friday from '../imgs/moreWork/img-joel-hansen_tgi-fridays.jpg';
-import Vitamin from '../imgs/moreWork/img-joel-hansen_vitamin-water.jpg';
-import OldNavy from '../imgs/moreWork/img-joel-hansen_old-navy-fitlabs.jpg';
-import Amex from '../imgs/moreWork/img-joel-hansen_amex-travel-insiders.jpg';
-import Earth from '../imgs/moreWork/img-joel-hansen_earth-balance.jpg';
+import Saturday from '../imgs/moreWork/img-joel-hansen_amex-small-business-saturday.png';
+import Friday from '../imgs/moreWork/img-joel-hansen_tgi-fridays.png';
+import Vitamin from '../imgs/moreWork/img-joel-hansen_vitamin-water.png';
+import OldNavy from '../imgs/moreWork/img-joel-hansen_old-navy-fitlabs.png';
+import Amex from '../imgs/moreWork/img-joel-hansen_amex-travel-insiders.png';
+import Earth from '../imgs/moreWork/img-joel-hansen_earth-balance.png';
 
 class MoreWork extends PureComponent {
 	constructor(props) {

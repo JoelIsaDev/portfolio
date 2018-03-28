@@ -5,12 +5,14 @@
 .more-work__headline {
 	color: $white;
 	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.9rem;
 	margin: 0 0 $spacingSmall;
 	text-align: center;
 }
 
 .more-work__secondary-headline {
 	font-family: 'Cantarell', sans-serif;
+	font-size: 1.3rem;
 	font-weight: 700;
 	margin: 0 0 $spacingSmall;
 }
@@ -44,7 +46,7 @@
 
 .more-work-secondary__inner-wrap {
 	margin: 0 auto;
-	padding: $spacingLarge 0;
+	padding: $spacingLarge;
 	max-width: $maxWidth;
 
 	@media(min-width: $breakSmall) {

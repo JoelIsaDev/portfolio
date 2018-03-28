@@ -28,16 +28,18 @@
 .about-me-section__headline {
 	font-family: 'Cantarell', sans-serif;
 	font-weight: 700;
+	font-size: 1.1rem;
 	margin: 0;
 }
 
 .about-me-section__icon {
 	height: $iconLarge;
+	fill: $red;
 	margin: $spacingSmall 0;
 	width: $iconLarge;
 }
 
-.about-me-section__blurb{
-	margin: 0 auto;
-	max-width: 200px;
+.about-me-section__blurb {
+	font-size: 0.9rem;
+	margin: 0
 }

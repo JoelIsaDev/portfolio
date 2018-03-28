@@ -17,7 +17,7 @@
 	bottom: -15px;
 	position: absolute;
 	right: 0;
-	width: 25%;
+	width: 20%;
 }
 
 
@@ -45,6 +45,18 @@
 }
 
 .work-teaser__blurb {
+	font-size: 0.9rem;
 	margin: 0;
 	padding: 0 0 $spacingSmall;
+}
+
+.work-teaser__inner-wrap {
+	.basic-button {
+		font-size: 0.7rem;
+		padding: 10px 15px;
+	}
+
+	.basic-button__text { 
+		font-size: 0.7rem;
+	}
 }
