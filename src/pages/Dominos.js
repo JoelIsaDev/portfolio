@@ -13,6 +13,11 @@ import DominosSrc from '../imgs/examples/img-joel-hansen_dominos.png';
 import DominosSrcMobile from '../imgs/examples/img-joel-hansen_dominos-mobile.png';
 
 class Dominos extends PureComponent {
+
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	render() {
 		return(
 			<div id="workPage">

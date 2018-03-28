@@ -13,6 +13,11 @@ import EvolSrc from '../imgs/examples/img-joel-hansen_evol.png';
 import EvolSrcMobile from '../imgs/examples/img-joel-hansen_evol-mobile.png';
 
 class Evol extends PureComponent {
+
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	render() {
 		return(
 			<div id="workPage">

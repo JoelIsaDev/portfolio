@@ -13,6 +13,11 @@ import MadeSrc from '../imgs/examples/img-joel-hansen_made.png';
 import MadeSrcMobile from '../imgs/examples/img-joel-hansen_made-mobile.png';
 
 class Made extends PureComponent {
+
+	componentDidMount() {
+		window.scrollTo(0,0);
+	}
+
 	render() {
 		return(
 			<div id="workPage">
