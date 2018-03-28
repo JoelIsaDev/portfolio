@@ -4,7 +4,14 @@ import React, { PureComponent } from 'react';
 import WorkTeaser from '../molecules/WorkTeaser';
 
 /* Images */
-import FPO from '../imgs/fpo/fpo-computer.png';
+import Evol from '../imgs/examples/img-joel-hansen_evol.png';
+import EvolMobile from '../imgs/examples/img-joel-hansen_evol-mobile.png';
+import Dominos from '../imgs/examples/img-joel-hansen_dominos.png';
+import DominosMobile from '../imgs/examples/img-joel-hansen_dominos-mobile.png';
+import GSV from '../imgs/examples/img-joel-hansen_gsv.png';
+import GSVMobile from '../imgs/examples/img-joel-hansen_gsv-mobile.png';
+import Made from '../imgs/examples/img-joel-hansen_made.png';
+import MadeMobile from '../imgs/examples/img-joel-hansen_made-mobile.png';
 
 class WorkTeaserSection extends PureComponent {
 
@@ -17,28 +24,32 @@ class WorkTeaserSection extends PureComponent {
 				<div className="work-teaser-wrap__containter">
 					<WorkTeaser
 						clientName="Made"
-						imageSrc={FPO}
+						imageSrc={Made}
+						imageSrcMobile={MadeMobile}
 						route="made"
 						history={this.props.history}
 						tech="React . Express . Node . Sass"
 					/>
 					<WorkTeaser
 						clientName="GSV"
-						imageSrc={FPO}
+						imageSrc={GSV}
+						imageSrcMobile={GSVMobile}
 						route="gsv"
 						history={this.props.history}
 						tech="React . Node . Express . Sass . Keystone"
 					/>
 					<WorkTeaser
 						clientName="Evol"
-						imageSrc={FPO}
+						imageSrc={Evol}
+						imageSrcMobile={EvolMobile}
 						route="evol"
 						history={this.props.history}
 						tech="Wordpress . jQuery . PHP . HTML . Sass . Grunt"
 					/>
 					<WorkTeaser
 						clientName="Dominos"
-						imageSrc={FPO}
+						imageSrc={Dominos}
+						imageSrcMobile={DominosMobile}
 						route="dominos"
 						history={this.props.history}
 						tech="Backbone . jQuery . Sass . Grunt"

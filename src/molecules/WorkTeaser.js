@@ -45,7 +45,10 @@ class WorkTeaser extends PureComponent {
 	render(){
 		return(
 			<div className="work-teaser">
-				<img src={this.props.imageSrc} alt="" className="work-teaser__hero-main" />
+				<div className="work-teaser__hero-wrap">
+					<img src={this.props.imageSrc} alt="" className="work-teaser__hero-main" />
+					<img src={this.props.imageSrcMobile} alt="" className="work-teaser__hero-mobile" />
+				</div>
 				<div className="work-teaser__inner-wrap">
 					<h2 className="work-teaser__secondary-headline">
 						{this.props.clientName}

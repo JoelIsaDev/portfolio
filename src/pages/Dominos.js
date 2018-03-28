@@ -9,7 +9,8 @@ import NavLayout from '../objects/NavLayout';
 import BasicButton from '../atoms/BasicButton';
 
 /* Images */
-import FPO from '../imgs/fpo/fpo-computer.png';
+import DominosSrc from '../imgs/examples/img-joel-hansen_dominos.png';
+import DominosSrcMobile from '../imgs/examples/img-joel-hansen_dominos-mobile.png';
 
 class Dominos extends PureComponent {
 	render() {
@@ -31,7 +32,10 @@ class Dominos extends PureComponent {
 					</h1>
 					<div className="work-page__inner-wrap">
 						<div className="work-page-wrap--large">
-							<img src={FPO} alt="" className="work-page__hero" />
+							<div className="work-page__hero-wrap">
+								<img src={DominosSrc} alt="" className="work-page__hero" />
+								<img src={DominosSrcMobile} alt="" className="work-page__hero-mobile" />
+							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
 								lorem ipsum lorem ipsum lorem ipsum

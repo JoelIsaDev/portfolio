@@ -24,11 +24,6 @@
 	}
 }
 
-.work-page__hero {
-	display: block;
-	width: 100%;
-}
-
 .role__blurb {
 	margin: $spacingLarge 0;
 	width: 250px;
@@ -46,6 +41,23 @@
 	margin-top: $spacingLarge;
 }
 
+// !IMAGES ------------------------------------------------------------------
+// --------------------------------------------------------------------------
+
+.work-page__hero {
+	display: block;
+	max-width: 400px;
+	width: 100%;
+}
+
+.work-page__hero-mobile {
+	bottom: -15px;
+	position: absolute;
+	right: 0;
+	width: 25%;
+}
+
+
 // !WRAPPERS ----------------------------------------------------------------
 // --------------------------------------------------------------------------
 .work-page {
@@ -56,11 +68,14 @@
 .work-page-wrap--large { 
 	background-color: $offWhite;
 	margin: 0 auto;
-	padding: $spacingLarge;
+	padding: $spacingSmall;
+	max-width: 500px;
 	width: 80%;
 
 	@media(min-width: 1000px) {
 		margin: 0;
+		max-width: inherit;
+		padding: $spacingLarge;
 		width: inherit;
 	}
 }
@@ -69,13 +84,14 @@
 	background-color: $offWhite;
 	margin: $spacingLarge auto 0;
 	max-width: 400px;
-	padding: $spacingLarge;
+	padding: $spacingSmall;
 	width: 80%;
 
 	@media(min-width: 1000px) {
 		align-self: flex-start;
 		margin: 0;
 		max-width: inherit;
+		padding: $spacingLarge;
 		width: inherit;
 	}
 }
@@ -87,4 +103,9 @@
 		margin: 0 auto;
 		max-width: $maxWidth;
 	}
+}
+
+.work-page__hero-wrap {
+	max-width: 400px;
+	position: relative;
 }
