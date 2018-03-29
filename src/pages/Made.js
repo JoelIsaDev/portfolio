@@ -77,6 +77,7 @@ class Made extends PureComponent {
 								text="View Website"
 								route="https://www.heymade.com"
 								linkOut={true}
+								trackClass="jsOutMadeSite"
 							/>
 						</div>
 					</div>

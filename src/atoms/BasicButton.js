@@ -45,7 +45,7 @@ class BasicButton extends Component {
 		if(this.props.linkOut) {
 			return(
 				<a 
-					className={this.state.backgroundPosition+ ' basic-button'}
+					className={this.state.backgroundPosition+ ' basic-button '+this.props.trackClass}
 					href={this.props.route} 
 					onMouseEnter={this.setBackgroundCenter}
 					onMouseLeave={this.setBackgroundRight}
@@ -59,7 +59,7 @@ class BasicButton extends Component {
 		else {
 			return(
 				<a 
-					className={this.state.backgroundPosition+ ' basic-button'}
+					className={this.state.backgroundPosition+ ' basic-button jsTrackMore'+this.props.trackClass}
 					href={this.props.route} 
 					onClick={this.props.handleClick}
 					onMouseEnter={this.setBackgroundCenter}

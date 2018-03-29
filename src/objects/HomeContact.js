@@ -20,6 +20,7 @@ class HomeContact extends PureComponent {
 					text="Contact Me"
 					route="contact"
 					handleClick={this.props.handleClick}
+					trackClass="jsBottomContact"
 				/>
 
 			</section>

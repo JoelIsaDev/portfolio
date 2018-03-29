@@ -69,6 +69,7 @@ class Dominos extends PureComponent {
 								text="View Website"
 								route="https://anyware.dominos.com"
 								linkOut={true}
+								trackClass="jsOutDominosSite"
 							/>
 						</div>
 					</div>

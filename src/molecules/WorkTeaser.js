@@ -60,6 +60,7 @@ class WorkTeaser extends PureComponent {
 						text="See More"
 						route={this.props.route}
 						handleClick={this.handleButtonClick}
+						trackClass={this.props.clientName.replace(' ','-').replace("'",'').toLowerCase()}
 					/>
 				</div>
 			</div>
