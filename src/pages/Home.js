@@ -93,6 +93,7 @@ class Home extends PureComponent {
 							text="I am available for hire"
 							route="contact"
 							handleClick={this.handleButtonClick}
+							trackClass="jsTopContact"
 						/>
 						<span className="chevron--down push" onClick={this.scrollIt}></span>
 					</div>

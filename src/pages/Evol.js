@@ -70,6 +70,7 @@ class Evol extends PureComponent {
 								text="View Website"
 								route="http://www.evolfoods.com"
 								linkOut={true}
+								trackClass="jsOutGSVSite"
 							/>
 						</div>
 					</div>

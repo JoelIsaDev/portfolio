@@ -248,7 +248,7 @@ class Contact extends PureComponent {
 						<p className="contact-form__error">{this.state.messageErrorText}</p>
 					</div>
 					<button
-						className={this.state.showForm ? 'contact-form__submit active' : 'contact-form__submit'}
+						className={this.state.showForm ? 'contact-form__submit active jsFormSubmit' : 'contact-form__submit jsFormSubmit'}
 						type='submit'
 						onClick={this.handleSubmit}
 						disabled={this.state.buttonDisabled}

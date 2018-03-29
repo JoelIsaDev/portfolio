@@ -74,6 +74,7 @@ class GSV extends PureComponent {
 								text="View Website"
 								route="https://www.asugsvsummit.com"
 								linkOut={true}
+								trackClass="jsOutGSVSite"
 							/>
 						</div>
 					</div>

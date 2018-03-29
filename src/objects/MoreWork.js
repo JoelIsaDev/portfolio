@@ -68,7 +68,7 @@ class MoreWork extends PureComponent {
 						/>
 					</div>
 				</div>
-				<span className={this.state.showSection ? 'chevron--up' : 'chevron--up inactive'}onClick={this.toggleSection}></span>
+				<span className={this.state.showSection ? 'chevron--up jsShowMoreWork' : 'chevron--up inactive jsShowMoreWork'} onClick={this.toggleSection}></span>
 			</section>
 		);
 	}
