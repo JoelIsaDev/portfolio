@@ -1,5 +1,6 @@
 import React, { PureComponent } from 'react';
 import {Helmet} from "react-helmet";
+import smoothscroll from 'smoothscroll-polyfill';
 
 /* Objects */
 import Footer from '../objects/Footer';
@@ -11,6 +12,9 @@ import NavLayout from '../objects/NavLayout';
 
 /* Atoms */
 import BasicButton from '../atoms/BasicButton';
+
+
+smoothscroll.polyfill();
 
 class Home extends PureComponent {
 	constructor(props) {
@@ -83,7 +87,7 @@ class Home extends PureComponent {
 					/>
 					<div className="home-panel__content">
 						<h1 className="home-panel__headline">
-							My name is Joel, I make things on the internet. I'm the guy in the <span className="no-wrap">black jacket.</span>
+							My name is Joel, I make things on <span className="no-wrap">the internet.</span>
 						</h1>
 						<BasicButton
 							text="I am available for hire"

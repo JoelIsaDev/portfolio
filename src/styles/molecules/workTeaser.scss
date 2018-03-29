@@ -4,17 +4,14 @@
 // --------------------------------------------------------------------------
 .work-teaser__hero-main {
 	display: block;
+	height: auto;
 	max-width: 400px;
-	width: 90%;
-
-	@media(min-width: $breakSmall) {
-		max-width: inherit;
-		width: 100%;
-	}
+	width: 100%;
 }
 
 .work-teaser__hero-mobile {
 	bottom: -15px;
+	height: auto;
 	position: absolute;
 	right: 0;
 	width: 20%;

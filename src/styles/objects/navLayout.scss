@@ -5,15 +5,24 @@
 .header {
 	pointer-events: none;
 	position: fixed;
-	top:$spacingSmall;
+	top: $spacingSmall;
 	width: 100%;
 	z-index: 5;
 }
 
-.logo {
-	height: $iconLarge;
+.logo-wrap {
+	left: $spacingSmall;
 	pointer-events: all;
-	position: relative;
-	width: $iconLarge;
-	z-index: 3;
+	position: absolute;
+	z-index: 5;
+}
+
+.logo {
+	display: block;
+	height: auto;
+	width: $iconSmall;
+
+	@media(min-width: $breakSmall) {
+		width: $iconLarge;
+	}
 }

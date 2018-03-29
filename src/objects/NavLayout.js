@@ -5,7 +5,7 @@ import Nav from '../molecules/Nav';
 import NavMenu from '../molecules/NavMenu';
 
 /* Images */
-import Logo from '../imgs/logo.svg';
+import Logo from '../imgs/logo.png';
 
 class NavLayout extends PureComponent {
 

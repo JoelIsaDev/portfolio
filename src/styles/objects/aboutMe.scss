@@ -5,7 +5,7 @@
 .about-me-section-wrap {
 	max-width: $maxWidth;
 
-	@media(min-width: $breakSmall) {
+	@media(min-width: $breakMed) {
 		align-self: center;
 		display: flex;
 		justify-content: space-around;

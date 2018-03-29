@@ -8,11 +8,15 @@
 	display: inline-block;
 	min-width: 150px;
 	overflow: hidden;
-	padding: 15px;
+	padding: 12px;
 	position: relative;
 	text-align: center;
 
 	transition: all 0.25s;
+
+	@media(min-width: $breakSmall) {
+		padding: 15px;
+	}
 
 	&:before {
 		background-color: $white;
@@ -63,8 +67,12 @@
 .basic-button__text {
 	font-family: 'Cantarell', sans-serif;
 	font-weight: 700;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	position: relative;
 	text-transform: uppercase;
 	z-index: 2;
+
+	@media(min-width: $breakSmall) {
+		font-size: 1rem;
+	}
 }
