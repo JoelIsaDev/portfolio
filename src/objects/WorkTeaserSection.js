@@ -28,15 +28,15 @@ class WorkTeaserSection extends PureComponent {
 						imageSrcMobile={MadeMobile}
 						route="made"
 						history={this.props.history}
-						tech="React . Express . Node . Sass"
+						tech="React . Express . Sass"
 					/>
 					<WorkTeaser
-						clientName="GSV"
+						clientName="ASU GSV"
 						imageSrc={GSV}
 						imageSrcMobile={GSVMobile}
 						route="gsv"
 						history={this.props.history}
-						tech="React . Node . Express . Sass . Keystone"
+						tech="React . Express . Sass . Keystone"
 					/>
 					<WorkTeaser
 						clientName="Evol"
@@ -44,10 +44,10 @@ class WorkTeaserSection extends PureComponent {
 						imageSrcMobile={EvolMobile}
 						route="evol"
 						history={this.props.history}
-						tech="Wordpress . jQuery . PHP . HTML . Sass . Grunt"
+						tech="Wordpress . jQuery . PHP . Sass . Grunt"
 					/>
 					<WorkTeaser
-						clientName="Dominos"
+						clientName="Domino's"
 						imageSrc={Dominos}
 						imageSrcMobile={DominosMobile}
 						route="dominos"
