@@ -3,10 +3,11 @@
 // !SECTION -----------------------------------------------------------------
 // --------------------------------------------------------------------------
 .more-work__hero {
+	height: auto;
 	max-width: 350px;
 	width: 100%;
 
-	@media(min-width: $breakSmall) {
+	@media(min-width: $breakMed) {
 		max-width: inherit;
 	}
 }
@@ -17,7 +18,7 @@
 	max-width: 400px;
 	text-align: center;
 
-	@media(min-width: $breakSmall) {
+	@media(min-width: $breakMed) {
 		margin: 15px 0;
 		text-align: left;
 		width: calc(50% - 15px);
@@ -26,7 +27,7 @@
 	+.more-work__example {
 		margin-top: $spacingLarge;
 
-		@media(min-width: $breakSmall) {
+		@media(min-width: $breakMed) {
 			margin-top: 15px;
 		}
 	}

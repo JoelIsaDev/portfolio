@@ -5,19 +5,39 @@
 .work-page__headline {
 	color: $white;
 	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.5rem;
 	margin-bottom: $spacingLarge;
 	text-align: center;
+
+	@media(min-width:$breakSmall) {
+		font-size: 2rem;
+	}
 }
 
 .work-page__sub-headline-small {
 	color: $red;
 	font-family: 'Cantarell', sans-serif;
+	font-size: 1.2rem;
 	font-weight: 700;
 	margin: 0 0 $spacingSmall;
+
+	@media(min-width:$breakSmall) {
+		font-size: 1.5rem;
+	}
+}
+
+.role-wrap {
+	margin-left: $spacingSmall;
 }
 
 .role {
-	display: block;
+	display: list-item;
+	font-size: 0.95rem;
+	list-style-type: disc;
+
+	@media(min-width:$breakSmall) {
+		font-size: 1rem;
+	}
 
 	+.role {
 		margin-top: 10px;
@@ -25,20 +45,37 @@
 }
 
 .role__blurb {
+	font-family: 'Cantarell', sans-serif;
+	font-size: 0.95rem;
 	margin: $spacingLarge 0;
-	width: 250px;
+	width: 100%;
+
+	@media(min-width:$breakSmall) {
+		width: 250px;
+	}
 }
 
 .work-page__blurb {
+	font-family: 'Cantarell', sans-serif;
+	font-size: 0.95rem;
 	max-width: 400px;
 	width: 100%;
+
+	@media(min-width:$breakSmall) {
+		font-size: 1rem;
+	}
 }
 
 .work-page__sub-headline {
 	color: $red;
 	font-family: 'Cantarell', sans-serif;
+	font-size: 1.2rem;
 	font-weight: 700;
 	margin-top: $spacingLarge;
+
+	@media(min-width:$breakSmall) {
+		font-size: 1.5rem;
+	}
 }
 
 // !IMAGES ------------------------------------------------------------------
@@ -46,12 +83,14 @@
 
 .work-page__hero {
 	display: block;
+	height: auto;
 	max-width: 400px;
 	width: 100%;
 }
 
 .work-page__hero-mobile {
 	bottom: -15px;
+	height: auto;
 	position: absolute;
 	right: 0;
 	width: 20%;
@@ -62,7 +101,7 @@
 // --------------------------------------------------------------------------
 .work-page {
 	background-color: $darkBlue;
-	padding: $spacingLarge 0;
+	padding: 100px 0 $spacingLarge;
 }
 
 .work-page-wrap--large { 

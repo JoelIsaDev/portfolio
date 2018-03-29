@@ -37,7 +37,7 @@
 		max-height: 3000px;
 	}
 
-	@media(min-width: $breakSmall) {
+	@media(min-width: $breakMed) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -49,7 +49,7 @@
 	padding: $spacingLarge;
 	max-width: $maxWidth;
 
-	@media(min-width: $breakSmall) {
+	@media(min-width: $breakMed) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: space-between;

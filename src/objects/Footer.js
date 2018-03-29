@@ -1,4 +1,7 @@
 import React, { PureComponent } from 'react';
+import smoothscroll from 'smoothscroll-polyfill';
+
+smoothscroll.polyfill();
 
 class Footer extends PureComponent {
 	constructor(props) {
@@ -11,6 +14,7 @@ class Footer extends PureComponent {
 		Scrolls the user to the top of the page
 	*/
 	scrollToTop(e) {
+		console.log(document.getElementById(this.props.scrollElement).offsetTop);
 		window.scrollTo({
 			'behavior': 'smooth',
 			'left': 0,

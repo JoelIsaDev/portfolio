@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import {Helmet} from "react-helmet";
 import Axios from 'axios';
 import querystring from 'querystring';
+import $ from "jquery";
 
 /* Objects */
 import Footer from '../objects/Footer';
@@ -156,30 +157,21 @@ class Contact extends PureComponent {
 			Field3: this.state.message
 		});
 
-		this.setState({
-			buttonDisabled: true
-		});
-
 		fetch( 'https://joelisadev.wufoo.com/api/v3/forms/zty5dpn1e0ixg6/entries.json', {
 			method: 'POST',
-			mode: 'no-cors',
 			headers: {
-				'authorization': 'Basic TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC',
-				'content-type': 'application/x-www-form-urlencoded',
-				'Access-Control-Allow-Origin':'*',
-			},
-			auth: {
-				username: 'MZGY-OT7B-SF0F-PDLB',
-				password: 'MZGY-OT7B-SF0F-PDLB'
+				'Authorization': 'Basic TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC',
+				'Content-type': 'application/x-www-form-urlencoded',
+				'Access-Control-Allow-Origin':'*'
 			},
 			body: data
 		}).then(function(response) {
+			console.log(response);
 			if (response.statusText === 'Created') {
 				_this.setState({
 					submitted: true,
 					disabled: true,
-					isValid: true,
-					buttonDisabled: true
+					isValid: true
 				});
 			}
 			else {
@@ -187,13 +179,43 @@ class Contact extends PureComponent {
 				console.log(response.data);
 				_this.setState({
 					submitted: false,
-					buttonDisabled: false,
+					buttonDisabled: false
 				});
 			}
 		})
 		.catch(function(error) {
 			console.log('error', error);
 		});
+
+		// fetch( 'https://joelisadev.wufoo.com/api/v3/forms/zty5dpn1e0ixg6/entries.json', {
+		// 	method: 'POST',
+		// 	headers: {
+		// 		'Authorization': 'Basic TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC',
+		// 		'Content-type': 'application/x-www-form-urlencoded',
+		// 		'Access-Control-Allow-Origin':'*'
+		// 	},
+		// 	body: data
+		// }).then(function(response) {
+		// 	console.log(response);
+		// 	if (response.statusText === 'Created') {
+		// 		_this.setState({
+		// 			submitted: true,
+		// 			disabled: true,
+		// 			isValid: true
+		// 		});
+		// 	}
+		// 	else {
+		// 		console.log('failed');
+		// 		console.log(response.data);
+		// 		_this.setState({
+		// 			submitted: false,
+		// 			buttonDisabled: false
+		// 		});
+		// 	}
+		// })
+		// .catch(function(error) {
+		// 	console.log('error', error);
+		// });
 	}
 
 	render(){
@@ -252,9 +274,9 @@ class Contact extends PureComponent {
 						/>
 					</form>
 					<div className='contact-form__errors'>
-						<p>{this.state.nameErrorText}</p>
-						<p>{this.state.emailErrorText}</p>
-						<p>{this.state.messageErrorText}</p>
+						<p className="contact-form__error">{this.state.nameErrorText}</p>
+						<p className="contact-form__error">{this.state.emailErrorText}</p>
+						<p className="contact-form__error">{this.state.messageErrorText}</p>
 					</div>
 					<button
 						className={this.state.showForm ? 'contact-form__submit active' : 'contact-form__submit'}
