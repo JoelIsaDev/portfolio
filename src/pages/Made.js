@@ -22,9 +22,9 @@ class Made extends PureComponent {
 		return(
 			<div id="workPage">
 				<Helmet
-					title="Joel Hansen | LOREM IPSUM"
+					title="Joel Hansen | Developer Extraordinaire"
 					meta={[
-						{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
+						{name: 'description', content: 'Joel Hansen, Developer Extraordinaire'}
 					]}
 				/>
 				
@@ -43,13 +43,17 @@ class Made extends PureComponent {
 							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								This was a complete rebuild of Made's website. 
+								They wanted to showcase their client work through 
+								beautifully designed case study pages, most containing high res images 
+								and auto-play videos. The trick was to find a balance that would allow 
+								for the work to be shown at its highest quality and still keep load times 
+								quick on both desktop and mobile devices. Using a combination of React 
+								and Express, we were able to meet that goal quite well.
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								React . Express . Sass
 							</p>
 
 						</div>
@@ -64,8 +68,10 @@ class Made extends PureComponent {
 								</li>
 							</ul>
 							<p className="role__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								This was during my time at Made. I oversaw a team of developers, 
+								reviewing pull requests and assigning tasks. I worked with producers 
+								to create sprints, architected the code structure and coded 
+								much of <span className="no-wrap">front-end.</span>
 							</p>
 							<BasicButton
 								text="View Website"

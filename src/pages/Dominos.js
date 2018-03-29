@@ -22,9 +22,9 @@ class Dominos extends PureComponent {
 		return(
 			<div id="workPage">
 				<Helmet
-					title="Joel Hansen | LOREM IPSUM"
+					title="Joel Hansen | Developer Extraordinaire"
 					meta={[
-						{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
+						{name: 'description', content: 'Joel Hansen, Developer Extraordinaire'}
 					]}
 				/>
 				
@@ -33,7 +33,7 @@ class Dominos extends PureComponent {
 				/>
 				<section className="work-page">
 					<h1 className="work-page__headline">
-						Dominos <span className="no-wrap">Anyware Site</span>
+						Domino's <span className="no-wrap">Anyware Site</span>
 					</h1>
 					<div className="work-page__inner-wrap">
 						<div className="work-page-wrap--large">
@@ -43,13 +43,14 @@ class Dominos extends PureComponent {
 							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								Domino's needed a website to showcase all of the new ways to order pizza, 
+								from a smartphone to a watch, even from your car. We used background videos 
+								and rich animations on each section to give an interactive and unique feel 
+								to this site.
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								Backbone . jQuery . Sass . Grunt
 							</p>
 
 						</div>
@@ -61,8 +62,8 @@ class Dominos extends PureComponent {
 								</li>
 							</ul>
 							<p className="role__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								This was during my time at CP + B and I was responsible for much of 
+								the front-end development on <span className="no-wrap">this project.</span>
 							</p>
 							<BasicButton
 								text="View Website"

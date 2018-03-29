@@ -22,9 +22,9 @@ class Evol extends PureComponent {
 		return(
 			<div id="workPage">
 				<Helmet
-					title="Joel Hansen | LOREM IPSUM"
+					title="Joel Hansen | Developer Extraordinaire"
 					meta={[
-						{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
+						{name: 'description', content: 'Joel Hansen, Developer Extraordinaire'}
 					]}
 				/>
 				<NavLayout
@@ -42,13 +42,16 @@ class Evol extends PureComponent {
 							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								Evol asked us to make over their site and provide them with a new CMS so that 
+								they wouldn’t have to come to us every time they needed to update a product. 
+								We decided that Wordpress would be the best option. We moved forward 
+								with a &#34;decoupled&#34; or &#34;headless&#34; version, meaning that we were only using Wordpress 
+								for it's CMS capabilities and everything else we built was completely custom and separated. 
+								This allowed us to give admins the Wordpress CMS they expected, and users who visited the site a fast loading and unique experience. 
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								Wordpress . jQuery . PHP . Sass . Grunt
 							</p>
 
 						</div>
@@ -60,8 +63,8 @@ class Evol extends PureComponent {
 								</li>
 							</ul>
 							<p className="role__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								This was during my time at Made and I was responsible for 
+								both the front-end and back-end on <span className="no-wrap">this project</span>
 							</p>
 							<BasicButton
 								text="View Website"

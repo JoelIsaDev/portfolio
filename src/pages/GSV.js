@@ -22,9 +22,9 @@ class GSV extends PureComponent {
 		return(
 			<div id="workPage">
 				<Helmet
-					title="Joel Hansen | LOREM IPSUM"
+					title="Joel Hansen | Developer Extraordinaire"
 					meta={[
-						{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
+						{name: 'description', content: 'Joel Hansen, Developer Extraordinaire'}
 					]}
 				/>
 				
@@ -33,7 +33,7 @@ class GSV extends PureComponent {
 				/>
 				<section className="work-page">
 					<h1 className="work-page__headline">
-						GSV ASU Summit <span className="no-wrap">Website Redesign</span>
+						ASU GSV Summit <span className="no-wrap">Website Redesign</span>
 					</h1>
 					<div className="work-page__inner-wrap">
 						<div className="work-page-wrap--large">
@@ -43,13 +43,14 @@ class GSV extends PureComponent {
 							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								For this build we needed to not only revamp the look and feel of the site, 
+								but also provide the client with a new CMS. We wanted to find one with speed and 
+								flexibility that played also nicely with React. We landed on Keystone and in the end, 
+								we were happy with the results.
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								React . Express . Sass . Keystone
 							</p>
 
 						</div>
@@ -64,8 +65,10 @@ class GSV extends PureComponent {
 								</li>
 							</ul>
 							<p className="role__blurb">
-								lorem ipsum lorem ipsum lorem ipsum
-								lorem ipsum lorem ipsum lorem ipsum
+								This was during my time at Made. For this project we had a front-end team, 
+								a back-end team, and an app team. All of which I oversaw. 
+								I did this through code reviews, sprint planning and daily stand-ups. 
+								Code-wise I was primarily responsible for <span className="no-wrap">the website.</span>
 							</p>
 							<BasicButton
 								text="View Website"

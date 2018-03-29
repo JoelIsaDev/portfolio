@@ -39,7 +39,7 @@ class Contact extends PureComponent {
 	}
 
 	/*
- 		assigns form field values as they are filled out 
+ 		Assigns form field values as they are filled out 
  	*/
 	onChange(e) {
 		var name = e.target.name;
@@ -142,7 +142,7 @@ class Contact extends PureComponent {
 	}
 
 	/* 
-		submits forms through Made proxy server to Wufoo api 
+		Submits forms through Made proxy server to Wufoo api 
 	*/
 	submitForm() {
 		var _this = this,
@@ -150,7 +150,6 @@ class Contact extends PureComponent {
 
 		this.validateForm();
 
-		
 		const data = querystring.stringify({
 			Field1: this.state.name,
 			Field2: this.state.email,
@@ -186,36 +185,6 @@ class Contact extends PureComponent {
 		.catch(function(error) {
 			console.log('error', error);
 		});
-
-		// fetch( 'https://joelisadev.wufoo.com/api/v3/forms/zty5dpn1e0ixg6/entries.json', {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Authorization': 'Basic TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC',
-		// 		'Content-type': 'application/x-www-form-urlencoded',
-		// 		'Access-Control-Allow-Origin':'*'
-		// 	},
-		// 	body: data
-		// }).then(function(response) {
-		// 	console.log(response);
-		// 	if (response.statusText === 'Created') {
-		// 		_this.setState({
-		// 			submitted: true,
-		// 			disabled: true,
-		// 			isValid: true
-		// 		});
-		// 	}
-		// 	else {
-		// 		console.log('failed');
-		// 		console.log(response.data);
-		// 		_this.setState({
-		// 			submitted: false,
-		// 			buttonDisabled: false
-		// 		});
-		// 	}
-		// })
-		// .catch(function(error) {
-		// 	console.log('error', error);
-		// });
 	}
 
 	render(){
@@ -232,7 +201,7 @@ class Contact extends PureComponent {
 						history={this.props.history}
 					/>
 					<h1 className="contact-headline">
-						Lorem Ipsum
+						Contact Me
 					</h1>
 					<form className="contact-form">
 						<label className="visuallyhidden" htmlFor="contactName">Name</label>
@@ -284,7 +253,7 @@ class Contact extends PureComponent {
 						onClick={this.handleSubmit}
 						disabled={this.state.buttonDisabled}
 					>
-						{this.state.isValid ? `We'll get back to you soon!` : `Submit`}
+						{this.state.isValid ? `I'll be in touch!` : `Submit`}
 					</button>
 				</section>
 				<Footer
