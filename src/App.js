@@ -42,7 +42,7 @@ class App extends Component {
 						/>}
 					/>
 
-					<Route exact path='/gsv'
+					<Route exact path='/asu-gsv'
 					render={(props) =>
 						<GSV {...props}
 						/>}
