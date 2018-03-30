@@ -34,7 +34,7 @@ class WorkTeaserSection extends PureComponent {
 						clientName="ASU GSV"
 						imageSrc={GSV}
 						imageSrcMobile={GSVMobile}
-						route="gsv"
+						route="asu-gsv"
 						history={this.props.history}
 						tech="React . Express . Sass . Keystone"
 					/>

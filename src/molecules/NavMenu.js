@@ -56,26 +56,31 @@ class NavMenu extends Component {
 						text="Made"
 						route="made"
 						handleClick={this.handleButtonClick}
+						trackClass="NavMade"
 					/>
 					<BasicButton
-						text="GSV"
-						route="gsv"
+						text="ASU GSV"
+						route="asu-gsv"
 						handleClick={this.handleButtonClick}
+						trackClass="NavGSV"
 					/>
 					<BasicButton
 						text="Evol"
 						route="evol"
 						handleClick={this.handleButtonClick}
+						trackClass="NavEvol"
 					/>
 					<BasicButton
-						text="Dominos"
+						text="Domino's"
 						route="dominos"
 						handleClick={this.handleButtonClick}
+						trackClass="NavDominos"
 					/>
 					<BasicButton
 						text="Contact"
 						route="contact"
 						handleClick={this.handleButtonClick}
+						trackClass="NavContact"
 					/>
 				</div>
 			</div>
