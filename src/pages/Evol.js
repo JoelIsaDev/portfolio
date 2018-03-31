@@ -42,8 +42,7 @@ class Evol extends PureComponent {
 							</div>
 							<h2 className="work-page__sub-headline">About The Project</h2>
 							<p className="work-page__blurb">
-								Evol asked us to make over their site and provide them with a new CMS so that 
-								they wouldn’t have to come to us every time they needed to update a product. 
+								Evol asked us to make over their site and provide them with a new CMS. 
 								We decided that Wordpress would be the best option. We moved forward 
 								with a &#34;decoupled&#34; or &#34;headless&#34; version, meaning that we were only using Wordpress 
 								for it's CMS capabilities and everything else we built was completely custom and separated. 
