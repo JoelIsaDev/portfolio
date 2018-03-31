@@ -2,7 +2,6 @@ import React, { PureComponent } from 'react';
 import {Helmet} from "react-helmet";
 import Axios from 'axios';
 import querystring from 'querystring';
-import $ from "jquery";
 
 /* Objects */
 import Footer from '../objects/Footer';
@@ -40,6 +39,7 @@ class Contact extends PureComponent {
 
 	/*
  		Assigns form field values as they are filled out 
+ 		@param {object} e - event
  	*/
 	onChange(e) {
 		var name = e.target.name;
@@ -71,8 +71,9 @@ class Contact extends PureComponent {
 		}
 	}
 
-	/* 
+	/*
 		Only submits the form if it's valid
+		@param {object} e - event
 	*/
 	handleSubmit(e) {
 		e.preventDefault();
@@ -129,6 +130,7 @@ class Contact extends PureComponent {
 
 	/* 
 		Validates email address
+		@param {string} $email - the email address to be validated
 	*/
 	validateEmail($email) {
 		return $email.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
@@ -136,6 +138,7 @@ class Contact extends PureComponent {
 
 	/* 
 		Adds error class
+		@param {string} error - any form errors
 	*/
 	errorClass(error) {
 		return(error.length === 0 ? '' : 'has-error');
@@ -145,8 +148,7 @@ class Contact extends PureComponent {
 		Submits forms through Made proxy server to Wufoo api 
 	*/
 	submitForm() {
-		var _this = this,
-			formData = new FormData();
+		var _this = this;
 
 		this.validateForm();
 
@@ -156,21 +158,18 @@ class Contact extends PureComponent {
 			Field3: this.state.message
 		});
 
-		fetch( 'https://joelisadev.wufoo.com/api/v3/forms/zty5dpn1e0ixg6/entries.json', {
+		Axios({
 			method: 'POST',
-			headers: {
-				'Authorization': 'Basic TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC',
-				'Content-type': 'application/x-www-form-urlencoded',
-				'Access-Control-Allow-Origin':'*'
-			},
-			body: data
-		}).then(function(response) {
-			console.log(response);
-			if (response.statusText === 'Created') {
+			url: 'https://joelisadev-api.herokuapp.com/api/contact',
+			data: data
+		})
+		.then(function(response) {
+			if (response.data.indexOf('Created') !== -1) {
 				_this.setState({
 					submitted: true,
 					disabled: true,
-					isValid: true
+					isValid: true,
+					buttonDisabled: true
 				});
 			}
 			else {
