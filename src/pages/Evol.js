@@ -47,7 +47,8 @@ class Evol extends PureComponent {
 								We decided that Wordpress would be the best option. We moved forward 
 								with a &#34;decoupled&#34; or &#34;headless&#34; version, meaning that we were only using Wordpress 
 								for it's CMS capabilities and everything else we built was completely custom and separated. 
-								This allowed us to give admins the Wordpress CMS they expected, and users who visited the site a fast loading and unique experience. 
+								This allowed us to give admins the Wordpress CMS they expected, and 
+								users who visited the site a fast loading and <span className="no-wrap">unique experience.</span>
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">

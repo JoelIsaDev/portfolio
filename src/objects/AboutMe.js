@@ -26,21 +26,21 @@ class AboutMe extends PureComponent {
 				<div className="about-me-section-wrap">
 					<AboutSection
 						headline="Code"
-						blurb="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+						blurb="I am very comfortable using tools such as Sass and Grunt, and frameworks like React. I am just as happy to use vanilla Javascript, jQuery, HTML and CSS. I strive to write clean, semantic code that will improve SEO and take into account ADA compliance."
 						icon={codeSVG}
 						viewbox={codeViewbox}
 						multiline={true}
 					/>
 					<AboutSection
 						headline="Architecture"
-						blurb="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+						blurb="Over-architecting a project can cause it to become unmanageable, whereas under-architecting it can leave it unscalable. I am careful to assess the client’s needs and deliver a project that runs smoothly all the way through."
 						icon={architectureSVG}
 						viewbox={architectureViewbox}
 						multiline={false}
 					/>
 					<AboutSection 
 						headline="Project Managment"
-						blurb="lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+						blurb="It is important that everyone on a team is on the same page. This can best be accomplished through daily stand-ups, code reviews and sprint planning. I also work very closely with producers, designers and QA to assure that every project is the best that it can be."
 						icon={projectSVG}
 						viewbox={projectViewbox}
 						multiline={false}

@@ -46,7 +46,7 @@ class GSV extends PureComponent {
 								For this build we needed to not only revamp the look and feel of the site, 
 								but also provide the client with a new CMS. We wanted to find one with speed and 
 								flexibility that played also nicely with React. We landed on Keystone and in the end, 
-								we were happy with the results.
+								we were happy with <span className="no-wrap">the results.</span>
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
@@ -66,7 +66,7 @@ class GSV extends PureComponent {
 							</ul>
 							<p className="role__blurb">
 								This was during my time at Made. For this project we had a front-end team, 
-								a back-end team, and an app team. All of which I oversaw. 
+								a back-end team and an app team, all of which I oversaw. 
 								I did this through code reviews, sprint planning and daily stand-ups. 
 								Code-wise I was primarily responsible for <span className="no-wrap">the website.</span>
 							</p>
