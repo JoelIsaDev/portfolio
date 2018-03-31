@@ -9,7 +9,7 @@ class HomeContact extends PureComponent {
 		return(
 			<section className="home-contact-wrap">
 				<h1 className="home-contact-headline">
-					Let's Do Work
+					Let's Make Things
 				</h1>
 				<p className="home-contact__blurb">
 					I am currently available for full time or freelance. 

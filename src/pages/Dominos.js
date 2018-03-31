@@ -46,7 +46,7 @@ class Dominos extends PureComponent {
 								Domino's needed a website to showcase all of the new ways to order pizza, 
 								from a smartphone to a watch, even from your car. We used background videos 
 								and rich animations on each section to give an interactive and unique feel 
-								to this site.
+								to <span className="no-wrap">this site.</span>
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
@@ -63,7 +63,7 @@ class Dominos extends PureComponent {
 							</ul>
 							<p className="role__blurb">
 								This was during my time at CP + B and I was responsible for much of 
-								the front-end development on <span className="no-wrap">this project.</span>
+								the <span className="no-wrap">front-end development.</span>
 							</p>
 							<BasicButton
 								text="View Website"

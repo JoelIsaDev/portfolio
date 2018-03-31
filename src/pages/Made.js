@@ -49,7 +49,7 @@ class Made extends PureComponent {
 								and auto-play videos. The trick was to find a balance that would allow 
 								for the work to be shown at its highest quality and still keep load times 
 								quick on both desktop and mobile devices. Using a combination of React 
-								and Express, we were able to meet that goal quite well.
+								and Express, we were able to meet that goal <span className="no-wrap">quite well.</span>
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>
 							<p className="work-page__blurb">
