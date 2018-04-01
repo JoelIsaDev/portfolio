@@ -193,7 +193,7 @@ class Contact extends PureComponent {
 					<Helmet
 						title="Contact - Joel Hansen | A Developer and a Creative Technical Director"
 						meta={[
-							{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery and Express'}
+							{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery, APIs, and Express'}
 						]}
 					/>
 					<NavLayout
