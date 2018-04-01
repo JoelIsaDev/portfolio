@@ -12,9 +12,9 @@ class NotFound extends PureComponent {
 					history={this.props.history}
 				/>
 				<Helmet
-					title="Joel Hansen | Joel Hansen 404"
+					title="404 - Joel Hansen | A Developer, and a Creative Technical Director"
 					meta={[
-						{name: 'description', content: 'Joel Hansen, Developer Extraordinaire'}
+						{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery and Express'}
 					]}
 				/>
 				<h1 className="not-found__headline">

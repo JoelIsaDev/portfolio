@@ -191,9 +191,9 @@ class Contact extends PureComponent {
 			<div>
 				<section className="contact-wrapper" id="jsContactWrapper">
 					<Helmet
-						title="Joel Hansen | Contact"
+						title="Contact - Joel Hansen | A Developer, and a Creative Technical Director"
 						meta={[
-							{name: 'description', content: 'Joel Hansen, Contact'}
+							{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery and Express'}
 						]}
 					/>
 					<NavLayout
