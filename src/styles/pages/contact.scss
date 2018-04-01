@@ -1,0 +1,79 @@
+@import '../utilities/variables.scss';
+
+// !CONTACT -----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.contact-wrapper {
+	background-color: $offWhite;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 100px 0 $spacingLarge;
+}
+
+.contact-headline {
+	color: $black;
+	font-family: 'Fjalla One', sans-serif;
+	margin: 0;
+	text-align: center;
+}
+
+// !FORM --------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.contact-form {
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	margin: $spacingLarge 0 0;
+	max-width: 500px;
+	width: 90%;
+
+	@media(min-width:$breakSmall) {
+		width: 100%;
+	}
+}
+
+.contact-form__submit {
+	align-self: center;
+	background-color: $black;
+	border: 0;
+	border-radius: 30px;
+	color: $offWhite;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 13px;
+	height: 63px;
+	letter-spacing: 1px;
+	padding: 10px;
+	text-transform: uppercase;
+	width: 150px;
+
+	transition: all 0.5s ease-in-out 0.2s;
+
+	&.is-inactive {
+		background-color: $gray;
+	}
+}
+
+.contact-form__input {
+	border: 1px solid $gray;
+	color: $black;
+	font-size: 1rem;
+	margin-bottom: $spacingSmall;
+	padding: 20px 10px;
+
+	&.has-error {
+		border: 3px solid red;
+	}
+}
+
+.contact-form__errors {
+	padding: 0 0 $spacingSmall 0;
+	text-align: center;
+}
+
+.contact-form__error {
+	color: $red;
+	font-family: 'Cantarell', sans-serif;
+	font-size: 1rem;
+	font-weight: 700;
+	margin: 0;
+}

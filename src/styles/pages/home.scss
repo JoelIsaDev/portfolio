@@ -1,0 +1,55 @@
+@import '../utilities/variables.scss';
+
+// !HOME --------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.home-wrap {
+	height: 100%;
+	position: relative;
+}
+
+.home-panel--full {
+	align-items: center;
+	background: url('../../../imgs/background.jpg') no-repeat top left;
+	background-size: cover;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	position: relative;
+	text-align: center;
+
+	&:before {
+		background-color: $black;
+		content: '';
+		height: 100%;
+		left: 0;
+		opacity: 0.3;
+		position: absolute;
+		top: 0;
+		width: 100%;
+
+	}
+}
+
+.home-panel__content {
+	bottom: $spacingSmall;
+	left: 0;
+	padding: 0 $spacingSmall;
+	position: absolute;
+	width: 100%;
+
+	@media(min-width:$breakSmall) {
+		padding: 0 $spacingLarge;
+	}
+}
+
+.home-panel__headline {
+	color: $white;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.5rem;
+	margin-bottom: $spacingSmall;
+
+	@media(min-width:$breakSmall) {
+		font-size: 2rem;
+	}
+}

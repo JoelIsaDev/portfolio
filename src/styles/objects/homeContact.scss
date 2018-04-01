@@ -1,0 +1,33 @@
+@import '../utilities/variables.scss';
+
+// !HOME CONTACT ------------------------------------------------------------
+// --------------------------------------------------------------------------
+.home-contact-wrap {
+	align-items: center;
+	background-color: $blue;
+	border-bottom: 2px solid $darkBlue;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: $spacingLarge 0;
+}
+
+.home-contact-headline {
+	color: $white;
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.9rem;
+	margin: 0;
+}
+
+.home-contact__blurb {
+	color: $white;
+	font-size: 0.9rem;
+	margin: $spacingLarge auto;
+	max-width: 315px;
+	padding: $spacingSmall;
+	text-align: center;
+
+	@media(min-width: $breakSmall) {
+		padding: 0;
+	}
+}

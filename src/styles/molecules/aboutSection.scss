@@ -1,0 +1,45 @@
+@import '../utilities/variables.scss';
+
+// !ABOUT SECTION -----------------------------------------------------------
+// --------------------------------------------------------------------------
+.about-me-section {
+	background-color: $offWhite;
+	margin: 0 auto;
+	padding: $spacingLarge;
+	max-width: 300px;
+
+	@media(min-width: $breakMed) {
+		max-width: inherit;
+		padding: $spacingLarge;
+		width: calc(33.3333% - 15px);
+	}
+
+
+	+.about-me-section {
+		margin-top: $spacingSmall;
+
+		@media(min-width: $breakMed) {
+			margin-top: 0;
+		}
+	}
+
+}
+
+.about-me-section__headline {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	font-size: 1.1rem;
+	margin: 0;
+}
+
+.about-me-section__icon {
+	height: $iconLarge;
+	fill: $red;
+	margin: $spacingSmall 0;
+	width: $iconLarge;
+}
+
+.about-me-section__blurb {
+	font-size: 0.9rem;
+	margin: 0
+}

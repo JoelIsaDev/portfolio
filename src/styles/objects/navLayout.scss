@@ -1,0 +1,28 @@
+@import '../utilities/variables.scss';
+
+// !NAV LAYOUT --------------------------------------------------------------
+// --------------------------------------------------------------------------
+.header {
+	pointer-events: none;
+	position: fixed;
+	top: $spacingSmall;
+	width: 100%;
+	z-index: 5;
+}
+
+.logo-wrap {
+	left: $spacingSmall;
+	pointer-events: all;
+	position: absolute;
+	z-index: 5;
+}
+
+.logo {
+	display: block;
+	height: auto;
+	width: $iconSmall;
+
+	@media(min-width: $breakSmall) {
+		width: $iconLarge;
+	}
+}

@@ -1,0 +1,78 @@
+@import '../utilities/variables.scss';
+
+// !BUTTON ------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.basic-button {
+	border: 2px solid $red;
+	color: $red;
+	display: inline-block;
+	min-width: 150px;
+	overflow: hidden;
+	padding: 12px;
+	position: relative;
+	text-align: center;
+
+	transition: all 0.25s;
+
+	@media(min-width: $breakSmall) {
+		padding: 15px;
+	}
+
+	&:before {
+		background-color: $white;
+		content: '';
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		z-index: 1;
+
+		transition: transform 0.25s ease-in-out;
+		transform: translateX(-110%);
+	}
+
+	.no-touchevents &.right {
+
+		&:before {
+			transform: translateX(110%);
+		}
+	}
+
+	.no-touchevents &.center {
+		border: 2px solid $black;
+		color: $black;
+
+		&:before {
+			transform: translateX(0);
+		}
+	}
+
+	.no-touchevents &.left {
+
+		&:before {
+			transition: transform 0s ease-in-out;
+			transform: translateX(-110%);
+		}
+	}
+
+	.no-touchevents &:hover {
+		.chevron--right {
+			border-right: 1px solid $black;
+			border-top: 1px solid $black;
+		}
+	}
+}
+
+.basic-button__text {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	font-size: 0.8rem;
+	position: relative;
+	text-transform: uppercase;
+	z-index: 2;
+
+	@media(min-width: $breakSmall) {
+		font-size: 1rem;
+	}
+}

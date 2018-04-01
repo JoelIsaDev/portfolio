@@ -1,0 +1,35 @@
+@import '../utilities/variables.scss';
+
+// !SECTION -----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser__headline {
+	font-family: 'Fjalla One', sans-serif;
+	font-size: 1.9rem;
+	text-align: center;
+}
+
+.work-teaser__secondary-headline {
+	font-family: 'Cantarell', sans-serif;
+	font-weight: 700;
+	font-size: 1.3rem;
+	margin: $spacingSmall 0 0;
+}
+
+// !WRAPPERS ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser-wrap {
+	background-color: $offWhite;
+	padding: $spacingLarge 0;
+}
+
+.work-teaser-wrap__containter {
+	margin: 0 auto;
+	max-width: $maxWidth;
+
+	@media(min-width: $breakMed) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+	}
+}

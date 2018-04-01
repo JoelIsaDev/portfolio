@@ -1,0 +1,59 @@
+@import '../utilities/variables.scss';
+
+// !IMAGES ------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser__hero-main {
+	display: block;
+	height: auto;
+	max-width: 400px;
+	width: 100%;
+}
+
+.work-teaser__hero-mobile {
+	bottom: -15px;
+	height: auto;
+	position: absolute;
+	right: 0;
+	width: 20%;
+}
+
+
+// !WRAPPERS ----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.work-teaser {
+	max-width: $maxWidth;
+	padding: $spacingLarge;
+	text-align: center;
+
+	@media(min-width: 900px) {
+		text-align: left;
+		width: calc(50% - 15px);
+	}
+}
+
+.work-teaser__hero-wrap {
+	margin: 0 auto;
+	max-width: 400px;
+	position: relative;
+
+	@media(min-width: 900px) {
+		margin: 0;
+	}
+}
+
+.work-teaser__blurb {
+	font-size: 0.9rem;
+	margin: 0;
+	padding: 0 0 $spacingSmall;
+}
+
+.work-teaser__inner-wrap {
+	.basic-button {
+		font-size: 0.7rem;
+		padding: 10px 15px;
+	}
+
+	.basic-button__text { 
+		font-size: 0.7rem;
+	}
+}

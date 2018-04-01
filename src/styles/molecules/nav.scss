@@ -1,0 +1,78 @@
+@import '../utilities/variables.scss';
+
+// !NAV ---------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.nav-wrap {
+	cursor: pointer;
+	height: 45px;
+	pointer-events: all;
+	position: absolute;
+	right: $spacingSmall;
+	width: 30px;
+	z-index: 3;
+
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+
+	.no-touchevents &:hover {
+		.nav-bar {
+			height: 3px;
+		}
+	}
+
+	@media(min-width:$breakSmall) {
+		width: 35px;
+	}
+
+	&.is-active .nav-bar:nth-child(1) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+
+	&.is-active .nav-bar:nth-child(2) {
+		transform: rotate(45deg);
+	}
+
+	&.is-active .nav-bar:nth-child(3) {
+		transform: rotate(-45deg);
+	}
+
+	&.is-active .nav-bar:nth-child(4) {
+		top: 18px;
+		width: 0%;
+		left: 50%;
+	}
+}
+
+.nav-bar {
+	display: block;
+	position: absolute;
+	height: 1px;
+	width: 100%;
+	background: $red;
+	border-radius: 9px;
+	opacity: 1;
+	left: 0;
+	
+	transform: rotate(0deg);
+	transition: .25s ease-in-out;
+
+	@media(min-width:$breakSmall) {
+		height: 2px;
+	}
+
+	&:nth-child(1) {
+		top: 0px;
+	}
+
+	&:nth-child(2),
+	&:nth-child(3) {
+		top: 9px;
+
+	}
+
+	&:nth-child(4) {
+		top: 18px;
+	}
+}

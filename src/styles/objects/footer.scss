@@ -1,0 +1,39 @@
+@import '../utilities/variables.scss';
+
+// !FOOTER ------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.footer {
+	background-color: $blue;
+	padding: $spacingSmall 0;
+	text-align: center;
+}
+
+.legal {
+	color: $white;
+	font-size: 0.9rem;
+	display: block;
+	margin-bottom: $spacingLarge;
+}
+
+// !SOCIAL MEDIA ------------------------------------------------------------
+// --------------------------------------------------------------------------
+.social-media-wrap {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: $spacingSmall auto;
+	max-width: 200px;
+}
+
+.social-media-icon {
+	height: 25px;
+	fill: $white;
+	width: 25px;
+
+	opacity: 1;
+	transition: opacity 0.25s ease-in-out;
+
+	.no-touchevents &:hover {
+		opacity: 0.7;
+	}
+}

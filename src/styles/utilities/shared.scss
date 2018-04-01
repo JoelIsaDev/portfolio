@@ -1,0 +1,153 @@
+@import '../utilities/variables.scss';
+
+* {
+	-webkit-overflow-scrolling: touch
+}
+
+html {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html,
+body {
+	font-family: 'Cantarell', sans-serif;
+	height: 100%;
+	
+	-webkit-font-smoothing: antialiased;
+
+	&.is-locked {
+		overflow: hidden !important;
+	}
+}
+
+.app,
+.root {
+	height: 100%;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+textarea {
+	resize: none;
+}
+
+//remove default red shadow in Firefox
+input:required, textarea:required {
+	box-shadow:none;
+}
+
+
+// !WRAPS -------------------------------------------------------------------
+// --------------------------------------------------------------------------
+.limit-wrap {
+	max-width: $maxWidth;
+}
+
+// !CHEVRON -----------------------------------------------------------------
+// --------------------------------------------------------------------------
+.chevron--down {
+	border-right: 1px solid $white;
+	border-top: 1px solid $white;
+	cursor: pointer;
+	display: block;
+	height: 12px;
+	margin: 10px auto;
+	padding: 3px;
+	width: 12px;
+
+	transform: rotate(135deg);
+
+	.no-touchevents &:hover {
+		animation: bounceDown 0.75s infinite ease-in-out;
+	}
+
+	&.inactive {
+		display: none;
+	}
+
+	&.push {
+		margin-top: $spacingSmall;
+	}
+}
+
+.chevron--up {
+	border-right: 1px solid $white;
+	border-top: 1px solid $white;
+	cursor: pointer;
+	display: block;
+	height: 12px;
+	margin: 10px auto;
+	padding: 3px;
+	width: 12px;
+
+	transform: rotate(-45deg);
+
+	.no-touchevents &:hover {
+		animation: bounceUp 0.75s infinite ease-in-out;
+	}
+
+	&.inactive {
+		display: none;
+	}
+
+	&.push {
+		margin-top: $spacingLarge;
+	}
+}
+
+.chevron--right {
+	border-right: 1px solid $red;
+	border-top: 1px solid $red;
+	cursor: pointer;
+	display: inline-block;
+	height: 10px;
+	margin: 0 auto;
+	padding: 3px;
+	position: relative;
+	width: 10px;
+	z-index: 2;
+
+	transform: rotate(40deg);
+
+	&.inactive {
+		display: none;
+	}
+
+	&.push {
+		margin-left: $spacingLarge;
+	}
+}
+
+// !KEYFRAMES ---------------------------------------------------------------
+// --------------------------------------------------------------------------
+@keyframes bounceDown {
+	0%, 30%, 50%, 70, 90% {
+		transform: translateY(0) rotate(135deg);
+	}
+	20% {transform: translateY(1px) rotate(135deg)}
+	40% {transform: translateY(3px) rotate(135deg)}
+	60% {transform: translateY(1px) rotate(135deg)}
+}
+
+@keyframes bounceUp {
+	0%, 30%, 50%, 70, 90% {
+		transform: translateY(0) rotate(-45deg);
+	}
+	20% {transform: translateY(1px) rotate(-45deg)}
+	40% {transform: translateY(3px) rotate(-45deg)}
+	60% {transform: translateY(1px) rotate(-45deg)}
+}
