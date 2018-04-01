@@ -24,7 +24,7 @@ class GSV extends PureComponent {
 				<Helmet
 					title="ASU/GSV - Joel Hansen | A Developer and a Creative Technical Director"
 					meta={[
-						{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery and Express'}
+						{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery, APIs, and Express'}
 					]}
 				/>
 				
@@ -45,7 +45,8 @@ class GSV extends PureComponent {
 							<p className="work-page__blurb">
 								For this build we needed to not only revamp the look and feel of the site, 
 								but also provide the client with a new CMS. We wanted to find one with speed and 
-								flexibility that played also nicely with React. We landed on Keystone and in the end, 
+								flexibility that played also nicely with React. We also needed this CMS to provide a 
+								RESTful API to both the website and the app. We landed on Keystone and in the end, 
 								we were happy with <span className="no-wrap">the results.</span>
 							</p>
 							<h2 className="work-page__sub-headline">Tech Used</h2>

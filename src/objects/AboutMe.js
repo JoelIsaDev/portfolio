@@ -26,7 +26,7 @@ class AboutMe extends PureComponent {
 				<div className="about-me-section-wrap">
 					<AboutSection
 						headline="Code"
-						blurb="I am very comfortable using tools such as Sass and Grunt, and frameworks like React. I am just as happy to use vanilla Javascript, jQuery, HTML and CSS. I strive to write clean, semantic code that will improve SEO and take into account ADA compliance."
+						blurb="I am very comfortable using RESTful APIs, tools such as Sass and Grunt, and frameworks like React. I am just as happy to use vanilla Javascript, jQuery, HTML and CSS. I strive to write clean, semantic code that will improve SEO and take into account ADA compliance."
 						icon={codeSVG}
 						viewbox={codeViewbox}
 						multiline={true}
