@@ -22,7 +22,7 @@ class Evol extends PureComponent {
 		return(
 			<div id="workPage">
 				<Helmet
-					title="Evol - Joel Hansen | A Developer, and a Creative Technical Director"
+					title="Evol - Joel Hansen | A Developer and a Creative Technical Director"
 					meta={[
 						{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery and Express'}
 					]}
