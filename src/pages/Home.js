@@ -80,9 +80,9 @@ class Home extends PureComponent {
 				/>
 				<section className="home-panel--full" id="jsLanding">
 					<Helmet
-						title="Joel Hansen | Developer Extraordinaire"
+						title="Joel Hansen | A Developer, and a Creative Technical Director"
 						meta={[
-							{name: 'description', content: 'Joel Hansen, LOREM IPSUM'}
+							{name: 'description', content: 'Joel Hansen, a Developer and a Creative Technical Director skilled in React, Sass, React Native, Javascript, jQuery and Express'}
 						]}
 					/>
 					<div className="home-panel__content">
