@@ -51,7 +51,7 @@ class MoreWork extends PureComponent {
 							imgSrc={Vitamin}
 						/>
 						<MoreWorkExample
-							client="Earth Balanace"
+							client="Earth Balance"
 							imgSrc={Earth}
 						/>
 						<MoreWorkExample
