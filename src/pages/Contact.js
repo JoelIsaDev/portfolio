@@ -7,6 +7,7 @@ import querystring from "querystring";
 import Footer from "../objects/Footer";
 import NavLayout from "../objects/NavLayout";
 
+const token = "TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC";
 class Contact extends PureComponent {
   constructor(props) {
     super(props);
@@ -161,14 +162,12 @@ class Contact extends PureComponent {
       method: "post",
       url: "https://joelisadev.wufoo.com/api/v3/forms/zty5dpn1e0ixg6/entries.json",
       headers: {
-        authorization:
-          "Basic TVpHWS1PVDdCLVNGMEYtUERMQjpNWkdZLU9UN0ItU0YwRi1QRExC",
+        authorization: `Basic ${token}`,
         "content-type": "application/x-www-form-urlencoded",
       },
       data: data,
     })
       .then(function (response) {
-        console.log(response);
         if (response.data.Success === 1) {
           _this.setState({
             submitted: true,
