@@ -1,6 +1,5 @@
 import React, { PureComponent } from "react";
 import { Helmet } from "react-helmet";
-// import Axios from "axios";
 import querystring from "querystring";
 
 /* Objects */
@@ -157,36 +156,6 @@ class Contact extends PureComponent {
       Field2: this.state.email,
       Field3: this.state.message,
     });
-
-    // Axios({
-    //   method: "post",
-    //   url: "https://joelisadev.wufoo.com/api/v3/forms/zty5dpn1e0ixg6/entries.json",
-    //   headers: {
-    //     authorization: `Basic ${token}`,
-    //     "content-type": "application/x-www-form-urlencoded",
-    //   },
-    //   data: data,
-    // })
-    //   .then(function (response) {
-    //     if (response.data.Success === 1) {
-    //       _this.setState({
-    //         submitted: true,
-    //         disabled: true,
-    //         isValid: true,
-    //         buttonDisabled: true,
-    //       });
-    //     } else {
-    //       console.log("failed");
-    //       console.log(response.data);
-    //       _this.setState({
-    //         submitted: false,
-    //         buttonDisabled: false,
-    //       });
-    //     }
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error);
-    //   });
   }
 
   render() {
